@@ -127,6 +127,17 @@ section, footer {
 	
 }
 
+.custom-list {
+	list-style-type: none;
+	padding: 0;
+	margin-left: 0;
+	
+	i {
+		color: $site-blue;
+		margin-right: 1rem;
+	}
+}
+
 /* HOMEPAGE STYLING */
 @import 'home-page';
 @import 'news'; 

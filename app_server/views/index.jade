@@ -6,6 +6,7 @@ block content
 			.row
 				.columns.small-12
 					//TODO - Get orbit info
+					//TODO - Create static image sets for small screens
 					.orbit(role='region', aria-label='Favorite Space Pictures', data-orbit='', data-timer-delay='3000')
 						ul.orbit-container
 							button.orbit-previous
@@ -15,22 +16,22 @@ block content
 								span.show-for-sr Next Slide
 								| ▶︎
 							li.is-active.orbit-slide
-								img.orbit-image(src='//placehold.it/1200x400', alt='Fresh Coast Capital Tagline')
+								img.orbit-image(src='/images/slideshow/slide-1-fresh-coast-team.jpg', alt='Fresh Coast Capital Tagline')
 								figcaption.orbit-caption Fresh Coast Capital: Revitalizing communities through innovative and sustainable investment solutions
 							li.orbit-slide
-								img.orbit-image(src='//placehold.it/1200x400', alt='Land Program')
-								figcaption.orbit-caption Fresh Coast’s vacant land program partners with cities to install and finance park-like working landscapes
+								img.orbit-image(src='/images/slideshow/slide-2-poplar-trees.jpg', alt='Land Program')
+								figcaption.orbit-caption Fresh Coast’s vacant land program partners with cities to install and finance park-like working landscapes that revitalize vacant land 
 							li.orbit-slide
-								img.orbit-image(src='//placehold.it/1200x400', alt='Infrastructure Program')
-								figcaption.orbit-caption Fresh Coast’s green infrastructure program partners with cities to prioritize stormwater management
+								img.orbit-image(src='/images/slideshow/slide-3-urban-landscape.jpg', alt='Infrastructure Program')
+								figcaption.orbit-caption Fresh Coast’s green infrastructure program partners with cities to prioritize stormwater management alongside community, environmental and economic outcomes
 						nav.orbit-bullets
 							button.is-active(data-slide='0')
-								span.show-for-sr First slide details.
+								span.show-for-sr Fresh Coast Capital: Revitalizing communities through innovative and sustainable investment solutions
 								span.show-for-sr Current Slide
 							button(data-slide='1')
-								span.show-for-sr Second slide details.
+								span.show-for-sr Fresh Coast’s vacant land program partners with cities to install and finance park-like working landscapes that revitalize vacant land
 							button(data-slide='2')
-								span.show-for-sr Third slide details.
+								span.show-for-sr Fresh Coast’s green infrastructure program partners with cities to prioritize stormwater management alongside community, environmental and economic outcomes
 	section.divider
 		.row
 			.columns.small-12.medium-6.large-8
@@ -102,6 +103,10 @@ block content
 						br
 						a(href='http://herahub.com/magazine/4-go-green-tips-earth-day-2016-laura-brenner-kimes', target='_blank') Full Story at HeraHub.com &nbsp;
 							i.fa.fa-external-link
+			.row
+				.columns.small-10.end
+					a.button.ghost.expanded(href='/press')
+						| See All Fresh Coast Capital News 
 	section.divider.infographic
 		.grid.reversed
 			.row-header
@@ -119,28 +124,56 @@ block content
 			.row
 				.columns.small-12.large-4
 					h3.bullet-header Help Your City
-					ul
-						li City saves money because Fresh Coast maintains properties
-						li Operating business increases city tax base
-						li Vacant land reuse creates livable spaces to attract and retain residents
-						li City meets EPA regulations for stormwater management
+					ul.custom-list
+						li 
+							i.fa.fa-plus-circle 
+							| City saves money because Fresh Coast maintains properties
+						li 
+							i.fa.fa-plus-circle 
+							| Operating business increases city tax base
+						li 
+							i.fa.fa-plus-circle 
+							| Vacant land reuse creates livable spaces to attract and retain residents
+						li 
+							i.fa.fa-plus-circle 
+							| City meets EPA regulations for stormwater management
 				.columns.small-12.large-4
 					h3.bullet-header Help Your Community
-					ul
-						li Jobs for local contractors, engineering partners, and nonprofit partners
-						li Property value improvements
-						li Lower crime
-						li Health benefits 
-						li Educational programming opportunities
-						li Expanded urban agriculture
+					ul.custom-list
+						li 
+							i.fa.fa-plus-circle 
+							| Jobs for local contractors, engineering partners, and nonprofit partners
+						li 
+							i.fa.fa-plus-circle 
+							| Property value improvements
+						li 
+							i.fa.fa-plus-circle 
+							| Lower crime
+						li 
+							i.fa.fa-plus-circle 
+							| Health benefits 
+						li 
+							i.fa.fa-plus-circle 
+							| Educational programming opportunities
+						li 
+							i.fa.fa-plus-circle 
+							| Expanded urban agriculture
 
 				.columns.small-12.large-4
 					h3.bullet-header Help Your Environment
-					ul
-						li Stormwater and green infrastructure
-						li Climate resiliency
-						li Carbon sequestration
-						li Soil &amp; groundwater remediation
+					ul.custom-list
+						li 
+							i.fa.fa-plus-circle 
+							| Stormwater and green infrastructure
+						li 
+							i.fa.fa-plus-circle 
+							| Climate resiliency
+						li 
+							i.fa.fa-plus-circle 
+							| Carbon sequestration
+						li 
+							i.fa.fa-plus-circle 
+							| Soil &amp; groundwater remediation
 			.row
 				.columns.small-12
 					a.button.ghost.expanded Learn More

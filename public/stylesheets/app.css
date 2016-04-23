@@ -3096,7 +3096,7 @@ body {
   padding: 1rem;
   margin-bottom: 0;
   color: #fefefe;
-  background-color: rgba(0, 161, 240, 0.5); }
+  background-color: rgba(0, 161, 240, 0.85); }
 
 .orbit-previous, .orbit-next {
   position: absolute;
@@ -4417,6 +4417,14 @@ section .row-header, footer .row-header {
 section:nth-last-child(2), footer:nth-last-child(2) {
   border-bottom: 4px solid #00a1f0; }
 
+.custom-list {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 0; }
+  .custom-list i {
+    color: #00a1f0;
+    margin-right: 1rem; }
+
 /* HOMEPAGE STYLING */
 .orbit {
   margin-top: 1rem; }
@@ -4431,10 +4439,14 @@ section:nth-last-child(2), footer:nth-last-child(2) {
     bottom: 1.5rem;
     width: 50%;
     left: 2rem;
-    border: 2px solid #00a1f0; }
+    border: 2px solid #00a1f0;
+    text-transform: capitalize; }
     @media screen and (max-width: 63.9375em) {
       .orbit .orbit-caption {
-        font-size: .75rem; } }
+        font-size: .75rem;
+        bottom: 0;
+        left: 0;
+        width: 100%; } }
 
 .caption {
   display: inline-block;
