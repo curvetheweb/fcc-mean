@@ -7,14 +7,14 @@ html.no-js(lang='en')
 		title Investment and Real Estate Development | Fresh Coast Capital
 		link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic', rel='stylesheet', type='text/css')
 		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css")
-		link(rel='stylesheet', href='stylesheets/app.css')
+		link(rel='stylesheet', href='/stylesheets/app.css')
 	body
 		.grid
 			.row
 				.columns.small-12
 					header.top-bar
 						.top-bar-title
-							img.logo(alt='Fresh Coast Capital Logo', src='images/FreshCoastCapital-Logo.png')
+							img.logo(alt='Fresh Coast Capital Logo', src='/images/FreshCoastCapital-Logo.png')
 						.top-bar-left
 							nav.main-nav
 								ul.menu
@@ -23,14 +23,14 @@ html.no-js(lang='en')
 									li(class=(title === 'About Us' ? 'active' : ''))
 										a(href='/about-us') About Us
 									li(class=(title === 'Team' ? 'active' : ''))
-										a(href='/team') Team
+										a(href='/about-us/team') Team
 									li(class=(title === 'Projects' ? 'active' : ''))
-										a(href='/projects') Projects
+										a(href='/about-us/projects') Projects
 									li(class=(title === 'Press' ? 'active' : ''))
 										a(href='/press') Press
 		section.divider
 				
 		block content
-		script(src='javascripts/script.js')
+		script(src='/javascripts/script.js')
 		script.
 			$(document).foundation();
