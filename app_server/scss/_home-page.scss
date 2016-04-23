@@ -17,24 +17,3 @@
     border: 2px solid $site-blue;
 	}
 }
-
-section {
-	&.divider {
-    border-bottom: 4px solid #fff;
-    background-color: $site-blue;
-    padding: 1rem 0 2rem;
-	
-		& + * {
-			padding: 3rem 0;
-			border-top: 4px solid $site-blue;
-		}
-	}
-	
- 	.row-header {
-		@extend .row;
-		border-bottom: 1px solid $site-green;
-		margin-bottom: 1rem;
-	}
-	
-	
-}

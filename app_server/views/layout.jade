@@ -5,32 +5,58 @@ html.no-js(lang='en')
 		meta(http-equiv='x-ua-compatible', content='ie=edge')
 		meta(name='viewport', content='width=device-width, initial-scale=1.0')
 		title Investment and Real Estate Development | Fresh Coast Capital
+		link(rel='shortcut icon', href='/images/favicon.ico', type='image/x-icon')
 		link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic', rel='stylesheet', type='text/css')
 		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css")
 		link(rel='stylesheet', href='/stylesheets/app.css')
 	body
-		.grid
-			.row
-				.columns.small-12
-					header.top-bar
-						.top-bar-title
-							img.logo(alt='Fresh Coast Capital Logo', src='/images/FreshCoastCapital-Logo.png')
-						.top-bar-left
-							nav.main-nav
-								ul.menu
-									li(class=(title === 'Home' ? 'active' : ''))
-										a(href='/') Home
-									li(class=(title === 'About Us' ? 'active' : ''))
-										a(href='/about-us') About Us
-									li(class=(title === 'Team' ? 'active' : ''))
-										a(href='/about-us/team') Team
-									li(class=(title === 'Projects' ? 'active' : ''))
-										a(href='/about-us/projects') Projects
-									li(class=(title === 'Press' ? 'active' : ''))
-										a(href='/press') Press
-		section.divider
-				
-		block content
+		.wrapper
+			section.header
+				.grid
+					.row
+						.columns.small-12
+							header.top-bar
+								.top-bar-title
+									img.logo(alt='Fresh Coast Capital Logo', src='/images/FreshCoastCapital-Logo.png')
+								.top-bar-left
+									nav.main-nav
+										ul.menu
+											li(class=(title === 'Home' ? 'active' : ''))
+												a(href='/') Home
+											li(class=(title === 'About Us' ? 'active' : ''))
+												a(href='/about-us') About Us
+											li(class=(title === 'Team' ? 'active' : ''))
+												a(href='/about-us/team') Team
+											li(class=(title === 'Projects' ? 'active' : ''))
+												a(href='/about-us/projects') Projects
+											li(class=(title === 'Press' ? 'active' : ''))
+												a(href='/press') Press
+			section.divider
+
+			block content
+
+			footer
+				.grid.reversed
+					.row
+						.columns.small-12.medium-4
+							ul.site-map
+								li
+									a(href="/") Home
+								li
+									a(href="/about-us") About Us
+								li
+									a(href="/about-us/team") Team
+								li
+									a(href="/about-us/projects") Projects
+								li
+									a(href="/") Press
+						.columns.small-12.medium-4.end
+							ul.site-map
+								li Fresh Coast Capital
+								li 2064 N. California Ave. #206 
+								li Chicago, IL 60647
+							p Copyright &copy;2016, Fresh Coast Capital
+		
 		script(src='/javascripts/script.js')
 		script.
 			$(document).foundation();

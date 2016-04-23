@@ -877,33 +877,33 @@ button {
 .is-hidden {
   display: none !important; }
 
-.row, section .row-header {
+.row, section .row-header, footer .row-header {
   max-width: 75rem;
   margin-left: auto;
   margin-right: auto; }
-  .row::before, section .row-header::before, .row::after, section .row-header::after {
+  .row::before, section .row-header::before, footer .row-header::before, .row::after, section .row-header::after, footer .row-header::after {
     content: ' ';
     display: table; }
-  .row::after, section .row-header::after {
+  .row::after, section .row-header::after, footer .row-header::after {
     clear: both; }
-  .row.collapse > .column, section .collapse.row-header > .column, .row.collapse > .columns, section .collapse.row-header > .columns {
+  .row.collapse > .column, section .collapse.row-header > .column, footer .collapse.row-header > .column, .row.collapse > .columns, section .collapse.row-header > .columns, footer .collapse.row-header > .columns {
     padding-left: 0;
     padding-right: 0; }
-  .row .row, section .row-header .row, .row section .row-header, section .row .row-header, section .row-header .row-header {
+  .row .row, section .row-header .row, footer .row-header .row, .row section .row-header, section .row .row-header, section .row-header .row-header, .row footer .row-header, footer .row .row-header, footer .row-header .row-header {
     max-width: none;
     margin-left: -0.625rem;
     margin-right: -0.625rem;
     max-width: none; }
     @media screen and (min-width: 40em) {
-      .row .row, section .row-header .row, .row section .row-header, section .row .row-header, section .row-header .row-header {
+      .row .row, section .row-header .row, footer .row-header .row, .row section .row-header, section .row .row-header, section .row-header .row-header, .row footer .row-header, footer .row .row-header, footer .row-header .row-header {
         margin-left: -0.9375rem;
         margin-right: -0.9375rem; } }
-    .row .row.collapse, section .row-header .row.collapse, .row section .collapse.row-header, section .row .collapse.row-header, section .row-header .collapse.row-header {
+    .row .row.collapse, section .row-header .row.collapse, footer .row-header .row.collapse, .row section .collapse.row-header, section .row .collapse.row-header, section .row-header .collapse.row-header, .row footer .collapse.row-header, footer .row .collapse.row-header, footer .row-header .collapse.row-header {
       margin-left: 0;
       margin-right: 0; }
-  .row.expanded, section .expanded.row-header {
+  .row.expanded, section .expanded.row-header, footer .expanded.row-header {
     max-width: none; }
-    .row.expanded .row, section .expanded.row-header .row, .row.expanded section .row-header, section .row.expanded .row-header, section .expanded.row-header .row-header {
+    .row.expanded .row, section .expanded.row-header .row, footer .expanded.row-header .row, .row.expanded section .row-header, section .row.expanded .row-header, section .expanded.row-header .row-header, .row.expanded footer .row-header, footer .row.expanded .row-header, footer .expanded.row-header .row-header {
       margin-left: auto;
       margin-right: auto; }
 
@@ -921,9 +921,9 @@ button {
   .column.end:last-child:last-child, .end.columns:last-child:last-child {
     float: left; }
 
-.column.row.row, .row.row.columns, section .columns.row-header, section .column.row-header {
+.column.row.row, .row.row.columns, section .columns.row-header, footer .columns.row-header, section .column.row-header, footer .column.row-header {
   float: none; }
-  .row .column.row.row, section .row-header .column.row.row, .row .row.row.columns, section .row-header .row.row.columns, .row section .columns.row-header, section .row .columns.row-header, section .row-header .columns.row-header, .row section .column.row-header, section .row .column.row-header, section .row-header .column.row-header {
+  .row .column.row.row, section .row-header .column.row.row, footer .row-header .column.row.row, .row .row.row.columns, section .row-header .row.row.columns, footer .row-header .row.row.columns, .row section .columns.row-header, section .row .columns.row-header, section .row-header .columns.row-header, .row footer .columns.row-header, footer .row .columns.row-header, footer .row-header .columns.row-header, .row section .column.row-header, section .row .column.row-header, section .row-header .column.row-header, .row footer .column.row-header, footer .row .column.row-header, footer .row-header .column.row-header {
     padding-left: 0;
     padding-right: 0;
     margin-left: 0;
@@ -1173,7 +1173,7 @@ button {
   padding-left: 0;
   padding-right: 0; }
 
-.small-collapse .row, .small-collapse section .row-header, section .small-collapse .row-header {
+.small-collapse .row, .small-collapse section .row-header, section .small-collapse .row-header, .small-collapse footer .row-header, footer .small-collapse .row-header {
   margin-left: 0;
   margin-right: 0; }
 
@@ -1384,7 +1384,7 @@ button {
   .medium-collapse > .column, .medium-collapse > .columns {
     padding-left: 0;
     padding-right: 0; }
-  .medium-collapse .row, .medium-collapse section .row-header, section .medium-collapse .row-header {
+  .medium-collapse .row, .medium-collapse section .row-header, section .medium-collapse .row-header, .medium-collapse footer .row-header, footer .medium-collapse .row-header {
     margin-left: 0;
     margin-right: 0; }
   .medium-uncollapse > .column, .medium-uncollapse > .columns {
@@ -1592,7 +1592,7 @@ button {
   .large-collapse > .column, .large-collapse > .columns {
     padding-left: 0;
     padding-right: 0; }
-  .large-collapse .row, .large-collapse section .row-header, section .large-collapse .row-header {
+  .large-collapse .row, .large-collapse section .row-header, section .large-collapse .row-header, .large-collapse footer .row-header, footer .large-collapse .row-header {
     margin-left: 0;
     margin-right: 0; }
   .large-uncollapse > .column, .large-uncollapse > .columns {
@@ -4351,8 +4351,7 @@ body {
 .call-out {
   color: #fefefe;
   font-style: italic;
-  font-size: 1.5rem;
-  padding: 0 1.25rem; }
+  font-size: 1.5rem; }
 
 .highlight {
   background-color: #C3B37B;
@@ -4366,6 +4365,49 @@ body {
     top: -5px;
     left: -7px;
     font-size: 2.5rem; }
+
+.reversed * {
+  color: #fefefe; }
+
+.reversed .row-header {
+  border-bottom-color: #fefefe; }
+
+.bullet-header {
+  background-color: #00a1f0;
+  color: white;
+  padding: 1rem;
+  width: 100%; }
+
+.ghost {
+  background-color: #fefefe;
+  color: #00a1f0;
+  border: 1px solid #00a1f0; }
+
+.site-map {
+  list-style: none;
+  margin: 2rem 0; }
+
+footer {
+  background-color: #00a1f0;
+  border-top: 4px solid #fefefe;
+  padding-bottom: 3rem; }
+
+section.divider, footer.divider {
+  border-bottom: 4px solid #fff;
+  background-color: #00a1f0;
+  padding: 1rem 0 2rem; }
+  section.divider + *, footer.divider + * {
+    padding: 3rem 0;
+    border-top: 4px solid #00a1f0; }
+  section.divider .image-container, footer.divider .image-container {
+    text-align: center; }
+
+section .row-header, footer .row-header {
+  border-bottom: 1px solid #197F35;
+  margin-bottom: 1rem; }
+
+section:nth-last-child(2), footer:nth-last-child(2) {
+  border-bottom: 4px solid #00a1f0; }
 
 /* HOMEPAGE STYLING */
 .orbit {
@@ -4383,18 +4425,6 @@ body {
     left: 2rem;
     border: 2px solid #00a1f0; }
 
-section.divider {
-  border-bottom: 4px solid #fff;
-  background-color: #00a1f0;
-  padding: 1rem 0 2rem; }
-  section.divider + * {
-    padding: 3rem 0;
-    border-top: 4px solid #00a1f0; }
-
-section .row-header {
-  border-bottom: 1px solid #197F35;
-  margin-bottom: 1rem; }
-
 .caption {
   display: inline-block;
   font-size: .75rem;
@@ -4407,3 +4437,9 @@ section .row-header {
 
 .news-text {
   font-size: .75rem; }
+
+.news-item img {
+  padding-top: .3rem; }
+
+.news-divide {
+  border-bottom: 1px solid #00a1f0; }

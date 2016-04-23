@@ -15,5 +15,11 @@
 }
 
 .news-item {
+	img {
+		padding-top: .3rem;
+	}
+}
 
+.news-divide {
+	border-bottom: 1px solid $site-blue
 }

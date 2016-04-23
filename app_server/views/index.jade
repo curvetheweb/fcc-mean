@@ -1,51 +1,47 @@
 extends layout
 
 block content
-	.grid
-		.row
-			.columns.small-12
-				//TODO - Get orbit info
-				.orbit(role='region', aria-label='Favorite Space Pictures', data-orbit='', data-timer-delay='3000')
-					ul.orbit-container
-						button.orbit-previous
-							span.show-for-sr Previous Slide
-							| ◀︎
-						button.orbit-next
-							span.show-for-sr Next Slide
-							| ▶︎
-						li.is-active.orbit-slide
-							img.orbit-image(src='//placehold.it/1200x400', alt='Space')
-							figcaption.orbit-caption Space, the final frontier.
-						li.orbit-slide
-							img.orbit-image(src='//placehold.it/1200x400', alt='Space')
-							figcaption.orbit-caption Lets Rocket!
-						li.orbit-slide
-							img.orbit-image(src='//placehold.it/1200x400', alt='Space')
-							figcaption.orbit-caption Encapsulating
-						li.orbit-slide
-							img.orbit-image(src='//placehold.it/1200x400', alt='Space')
-							figcaption.orbit-caption Outta This World
-					nav.orbit-bullets
-						button.is-active(data-slide='0')
-							span.show-for-sr First slide details.
-							span.show-for-sr Current Slide
-						button(data-slide='1')
-							span.show-for-sr Second slide details.
-						button(data-slide='2')
-							span.show-for-sr Third slide details.
-						button(data-slide='3')
-							span.show-for-sr Fourth slide details.
+	section.slideshow
+		.grid
+			.row
+				.columns.small-12
+					//TODO - Get orbit info
+					.orbit(role='region', aria-label='Favorite Space Pictures', data-orbit='', data-timer-delay='3000')
+						ul.orbit-container
+							button.orbit-previous
+								span.show-for-sr Previous Slide
+								| ◀︎
+							button.orbit-next
+								span.show-for-sr Next Slide
+								| ▶︎
+							li.is-active.orbit-slide
+								img.orbit-image(src='//placehold.it/1200x400', alt='Fresh Coast Capital Tagline')
+								figcaption.orbit-caption Fresh Coast Capital: Revitalizing communities through innovative and sustainable investment solutions
+							li.orbit-slide
+								img.orbit-image(src='//placehold.it/1200x400', alt='Land Program')
+								figcaption.orbit-caption Fresh Coast’s vacant land program partners with cities to install and finance park-like working landscapes that revitalize vacant land 
+							li.orbit-slide
+								img.orbit-image(src='//placehold.it/1200x400', alt='Infrastructure Program')
+								figcaption.orbit-caption Fresh Coast’s green infrastructure program partners with cities to prioritize stormwater management alongside community, environmental and economic outcomes
+						nav.orbit-bullets
+							button.is-active(data-slide='0')
+								span.show-for-sr First slide details.
+								span.show-for-sr Current Slide
+							button(data-slide='1')
+								span.show-for-sr Second slide details.
+							button(data-slide='2')
+								span.show-for-sr Third slide details.
 	section.divider
 		.row
-			.columns.small-12.large-8
+			.columns.small-12.medium-6.large-8
 				p.call-out Fresh Coast works in cities looking to revitalize. We currently operate in 7 cities across 4 states: Flint and Battle Creek Michigan, Gary and Elkhart Indiana, Youngstown Ohio, and Kansas City and St Louis Missouri.
-			.columns.small-12.large-4
+			.columns.small-12.medium-6.large-4.image-container
 				img(src="/images/active-cities.png")
 	section.news
 		.grid
 			.row-header
 				.columns.small-12
-					h2 News
+					h2 Recent News &amp; Press
 			.row
 				.columns.small-12.medium-12.large-5
 					.row.news-item
@@ -59,7 +55,8 @@ block content
 							p.news-text
 								| Chicago-based Fresh Coast Capital, which was promoting the urban tree farm concept with the Land Bank, announced last week that it has secured an initial $1 million investment...
 								br
-								a(href='http://www.kansascity.com/news/local/article68450157.html', target='_blank') Full Story
+								a(href='http://www.kansascity.com/news/local/article68450157.html', target='_blank') Full Story at KansasCity.com &nbsp;
+									i.fa.fa-external-link
 				.columns.small-12.medium-12.large-5
 					.row.news-item
 						.columns.small-12.medium-4.img
@@ -72,8 +69,78 @@ block content
 							p.news-text
 								| Turning vacant land into viable green-space is the goal as a $1 million investment in six cities, including Flint, was announced by the White House on Wednesday....
 								br
-								a(href='http://www.abc12.com/home/headlines/Effort-will-develop-vacant-lots-into-tree-farms-green-space-373400781.html', target='_blank') Full Story
+								a(href='http://www.abc12.com/home/headlines/Effort-will-develop-vacant-lots-into-tree-farms-green-space-373400781.html', target='_blank') Full Story at ABC12.com &nbsp;
+									i.fa.fa-external-link
 				.columns.small-12.medium-12.large-2
 					aside.highlight 
 						i.fa.fa-exclamation-circle(aria-hidden="true")  
 						p In 2016, Fresh Coast will plant approximately 27,000 trees.
+			.row
+				.columns.small-6.small-offset-2
+					hr.news-divide
+			.row
+				.columns.small-12.medium-12.large-5
+					.row.news-item
+						.columns.small-12.medium-4.img
+							img(src='images/news/FreshCapitalTrees.jpg')
+							br
+							p.caption Img: businessjournaldaily.com
+						.columns.small-12.medium-8
+							p.news-headline
+								a(href='http://businessjournaldaily.com/fresh-coast-capital-to-reclaim-city-park-lands', target='_blank') Fresh Coast Capital to Reclaim City Park Lands
+							p.news-text
+								| Fresh Coast Capital announced Thursday that the $1 million fund would invest in 60 acres of pilot projects in Youngstown, St. Louis, Kansas City, Mo., Elkhart, Ind., and Battle Creek and Flint, Mich....
+								br
+								a(href='http://businessjournaldaily.com/fresh-coast-capital-to-reclaim-city-park-lands', target='_blank') Full Story at BusinessJournalDaily.com &nbsp;
+									i.fa.fa-external-link
+				.columns.small-12.medium-12.large-5.end
+					h3.bullet-header Guest Post
+					p.news-headline
+						a(href='http://herahub.com/magazine/4-go-green-tips-earth-day-2016-laura-brenner-kimes') 4 Tips to Help You Go Green for Earth Day 2016
+					p.news-text
+						| Want to do your part to help this Earth Day? There are many things you can do. Success is not all-or-nothing.
+						br
+						a(href='http://herahub.com/magazine/4-go-green-tips-earth-day-2016-laura-brenner-kimes', target='_blank') Full Story at HeraHub.com &nbsp;
+							i.fa.fa-external-link
+	section.divider.infographic
+		.grid.reversed
+			.row-header
+				.columns.small-12
+					h2 Our Process
+					// TODO - INFOGRAPHIC
+			.row
+				.columns.small-12
+					p Infographic to come
+	section.community.last-page-item
+		.grid
+			.row-header
+				.columns.small-12
+					h2 Our Impact
+			.row
+				.columns.small-12.large-4
+					h3.bullet-header Help Your City
+					ul
+						li City saves money because Fresh Coast maintains properties
+						li Operating business increases city tax base
+						li Vacant land reuse creates livable spaces to attract and retain residents
+						li City meets EPA regulations for stormwater management
+				.columns.small-12.large-4
+					h3.bullet-header Help Your Community
+					ul
+						li Jobs for local contractors, engineering partners, and nonprofit partners
+						li Property value improvements
+						li Lower crime
+						li Health benefits 
+						li Educational programming opportunities
+						li Expanded urban agriculture
+
+				.columns.small-12.large-4
+					h3.bullet-header Help Your Environment
+					ul
+						li Stormwater and green infrastructure
+						li Climate resiliency
+						li Carbon sequestration
+						li Soil &amp; groundwater remediation
+			.row
+				.columns.small-12
+					a.button.ghost.expanded Learn More

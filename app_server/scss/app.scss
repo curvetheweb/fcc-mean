@@ -33,7 +33,6 @@ body {
 	color: $white;
 	font-style: italic;
 	font-size: 1.5rem;
-	padding: 0 1.25rem;
 }
 
 .highlight {
@@ -50,6 +49,68 @@ body {
     left: -7px;
     font-size: 2.5rem;
 	}
+}
+
+.reversed {
+	* {
+		color: $white;
+	}
+	
+	.row-header {
+		border-bottom-color: $white;
+	}
+}
+
+.bullet-header {
+	background-color: $site-blue;
+	color: white;
+	padding: 1rem;
+	width: 100%;
+}
+
+.ghost {
+	background-color: $white;
+	color: $site-blue;
+	border: 1px solid $site-blue;
+}
+
+.site-map {
+	list-style: none;
+	margin: 2rem 0;
+}
+
+footer {
+	background-color: $site-blue;
+	border-top: 4px solid $white;
+	padding-bottom: 3rem;
+}
+
+section, footer {
+	&.divider {
+    border-bottom: 4px solid #fff;
+    background-color: $site-blue;
+    padding: 1rem 0 2rem;
+	
+		& + * {
+			padding: 3rem 0;
+			border-top: 4px solid $site-blue;
+		}
+		
+		.image-container {
+			text-align: center;
+		}
+	}
+	
+ 	.row-header {
+		@extend .row;
+		border-bottom: 1px solid $site-green;
+		margin-bottom: 1rem;
+	}
+	
+	&:nth-last-child(2) {
+		border-bottom: 4px solid $site-blue;
+	}
+	
 }
 
 /* HOMEPAGE STYLING */
