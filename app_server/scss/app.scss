@@ -13,6 +13,20 @@
 //	padding-bottom: 0;
 //}
 
+.no-js {
+  @include breakpoint(small only) {
+    .top-bar {
+      display: none;
+    }
+  }
+
+  @include breakpoint(medium) {
+    .title-bar {
+      display: none;
+    }
+  }
+}
+
 body {
 	font-family: $site-font;
 }

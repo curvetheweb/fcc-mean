@@ -15,12 +15,15 @@ html.no-js(lang='en')
 				.grid
 					.row
 						.columns.small-12
-							header.top-bar
+							header.title-bar(data-responsive-toggle="main-nav", data-hide-for="medium")
+								button.menu-icon(type="button", data-toggle='data-toggle')
+								.title-bar-title Menu
+							header.top-bar#main-nav
 								.top-bar-title
 									img.logo(alt='Fresh Coast Capital Logo', src='/images/FreshCoastCapital-Logo.png')
 								.top-bar-left
 									nav.main-nav
-										ul.menu
+										ul.vertical.medium-horizontal.menu
 											li(class=(title === 'Home' ? 'active' : ''))
 												a(href='/') Home
 											li(class=(title === 'About Us' ? 'active' : ''))

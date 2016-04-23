@@ -15,5 +15,9 @@
     width: 50%;
     left: 2rem;
     border: 2px solid $site-blue;
+		
+		@include breakpoint(medium down) { 
+			font-size: .75rem;
+		}
 	}
 }
