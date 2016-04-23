@@ -1,5 +1,57 @@
-@import 'vendor/foundation-sites/scss/settings';
-@import 'vendor/foundation-sites/scss/foundation';
+@import 'settings';
+@import '../../node_modules/foundation-sites/scss/foundation';
+@import '../../node_modules/motion-ui/motion-ui';
+
+@include foundation-everything;
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+/* HEADER STYLING */
+//.top-bar {
+//	border-bottom: 4px solid $site-blue;
+//	padding-bottom: 0;
+//}
+
+body {
+	font-family: $site-font;
+}
+
+.top-bar {
+	padding-bottom: 0;
+}
+
+.logo {
+	height: 60px; 
+}
+
+.main-nav {
+	padding-top: 1.75rem;
+}
+
+.call-out {
+	color: $white;
+	font-style: italic;
+	font-size: 1.5rem;
+	padding: 0 1.25rem;
+}
+
+.highlight {
+	background-color: $site-brown;
+	color: $white;
+	padding: 1rem;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	
+	i.fa {
+		position: absolute;
+    top: -5px;
+    left: -7px;
+    font-size: 2.5rem;
+	}
+}
 
 /* HOMEPAGE STYLING */
 @import 'home-page';
+@import 'news'; 

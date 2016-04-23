@@ -5,11 +5,32 @@ html.no-js(lang='en')
 		meta(http-equiv='x-ua-compatible', content='ie=edge')
 		meta(name='viewport', content='width=device-width, initial-scale=1.0')
 		title Investment and Real Estate Development | Fresh Coast Capital
-		link(rel='stylesheet', href='/public/stylesheets/app.css')
+		link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic', rel='stylesheet', type='text/css')
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css")
+		link(rel='stylesheet', href='stylesheets/app.css')
 	body
+		.grid
+			.row
+				.columns.small-12
+					header.top-bar
+						.top-bar-title
+							img.logo(alt='Fresh Coast Capital Logo', src='images/FreshCoastCapital-Logo.png')
+						.top-bar-left
+							nav.main-nav
+								ul.menu
+									li(class=(title === 'Home' ? 'active' : ''))
+										a(href='/') Home
+									li(class=(title === 'About Us' ? 'active' : ''))
+										a(href='/about-us') About Us
+									li(class=(title === 'Team' ? 'active' : ''))
+										a(href='/team') Team
+									li(class=(title === 'Projects' ? 'active' : ''))
+										a(href='/projects') Projects
+									li(class=(title === 'Press' ? 'active' : ''))
+										a(href='/press') Press
+		section.divider
+				
 		block content
-		script(src='js/vendor/jquery.min.js')
-		script(src='js/vendor/what-input.min.js')
-		script(src='js/foundation.min.js')
+		script(src='javascripts/script.js')
 		script.
 			$(document).foundation();
