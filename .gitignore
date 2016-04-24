@@ -47,4 +47,4 @@ Temporary Items
 .apdisk
 
 #SCSS Files
-app_server\scss\*.scss
+app_server/scss/*.scss
