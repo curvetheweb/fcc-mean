@@ -4467,4 +4467,5 @@ section:nth-last-child(2), footer:nth-last-child(2) {
   border-bottom: 1px solid #00a1f0; }
 
 .thumb {
-  max-width: 120px; }
+  max-width: 120px;
+  padding-top: .8rem; }
