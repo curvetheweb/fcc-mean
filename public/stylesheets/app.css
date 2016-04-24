@@ -4394,6 +4394,8 @@ body {
 .site-map {
   list-style: none;
   margin: 2rem 0; }
+  .site-map ul {
+    list-style: none; }
 
 footer {
   background-color: #00a1f0;
@@ -4469,3 +4471,6 @@ section:nth-last-child(2), footer:nth-last-child(2) {
 .thumb {
   max-width: 120px;
   padding-top: .8rem; }
+
+.team-member {
+  margin-bottom: 2.5rem; }
