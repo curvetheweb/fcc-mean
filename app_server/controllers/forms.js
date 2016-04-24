@@ -54,10 +54,15 @@ module.exports.contactForm = [function(req, res, next) {
 		});
 	});
 }, function(req, res, next) {
-	var now = new Date().toISOString();
+var date = new Date();
+date.setHours(date.getHours() - 5);
+
+// now you can get the string
+var isodate = date.toISOString();
+	
 	app.mailer.send('email', {
-    to: 'twilliams@curvetheweb.com', // REQUIRED. This can be a comma delimited string just like a normal email to field.  
-    subject: 'New Lead Generated at ' + now, // REQUIRED. 
+    to: 'twilliams@curvetheweb.com, laura@freshcoastcapital.com, april@freshcoastcapital.com', // REQUIRED. This can be a comma delimited string just like a normal email to field.  
+    subject: 'New Lead Generated at ' + isodate, // REQUIRED. 
     ContactName: req.body.contactName,
 		Organization: req.body.contactOrgName,
 		Email: req.body.contactEmail,
