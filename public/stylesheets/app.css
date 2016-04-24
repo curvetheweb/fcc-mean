@@ -4425,7 +4425,6 @@ section:nth-last-child(2), footer:nth-last-child(2) {
     color: #00a1f0;
     margin-right: 1rem; }
 
-/* HOMEPAGE STYLING */
 .orbit {
   margin-top: 1rem; }
   .orbit .orbit-previous, .orbit .orbit-next {
@@ -4466,3 +4465,6 @@ section:nth-last-child(2), footer:nth-last-child(2) {
 
 .news-divide {
   border-bottom: 1px solid #00a1f0; }
+
+.thumb {
+  max-width: 120px; }
