@@ -4,7 +4,7 @@ var router = express.Router();
 var ctrlMain = require('../controllers/main');
 var ctrlAbout = require('../controllers/about');
 var ctrlPress = require('../controllers/press');
-
+var ctrlForms = require('../controllers/forms');
 
 /* Home Page */
 router.get('/', ctrlMain.index);
@@ -16,5 +16,8 @@ router.get('/about-us/projects', ctrlAbout.projects);
 
 /* Press Page */
 router.get('/press', ctrlPress.press);
+
+/* Form Handling */
+router.post('/contact', ctrlForms.contactForm);
 
 module.exports = router;

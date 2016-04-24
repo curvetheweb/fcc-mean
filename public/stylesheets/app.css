@@ -4427,6 +4427,12 @@ section:nth-last-child(2), footer:nth-last-child(2) {
     color: #00a1f0;
     margin-right: 1rem; }
 
+.form-error {
+  background-color: #ec5840;
+  margin-top: -1rem;
+  color: #fefefe;
+  padding: .25rem .5rem; }
+
 .orbit {
   margin-top: 1rem; }
   .orbit .orbit-previous, .orbit .orbit-next {
