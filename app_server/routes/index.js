@@ -19,5 +19,6 @@ router.get('/press', ctrlPress.press);
 
 /* Form Handling */
 router.post('/contact', ctrlForms.contactForm);
+router.get('/contact/thank-you', ctrlForms.formThankYou)
 
 module.exports = router;

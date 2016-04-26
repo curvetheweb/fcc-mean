@@ -4,7 +4,7 @@ html.no-js(lang='en')
 		meta(charset='utf-8')
 		meta(http-equiv='x-ua-compatible', content='ie=edge')
 		meta(name='viewport', content='width=device-width, initial-scale=1.0')
-		title Investment and Real Estate Development | Fresh Coast Capital
+		title Fresh Coast Capital: vacant land management, green stormwater infrastructure, conservation finance, impact investment, and real estate development
 		link(rel='shortcut icon', href='/images/favicon.ico', type='image/x-icon')
 		link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic', rel='stylesheet', type='text/css')
 		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css")
@@ -32,6 +32,8 @@ html.no-js(lang='en')
 												a(href='/about-us/projects') Projects
 											li(class=(title === 'Press' ? 'active' : ''))
 												a(href='/press') Press
+								.top-bar-right
+									a.button.ghost(data-open='form-modal') Contact Us
 			section.divider
 
 			block content
@@ -55,9 +57,14 @@ html.no-js(lang='en')
 						.columns.small-12.medium-4.end
 							ul.site-map
 								li Fresh Coast Capital
-								li 2064 N. California Ave. #206 
-								li Chicago, IL 60647
+								li 35 E Upper Wacker Dr #1200
+								li Chicago, IL 60601
+								li (312) 884-1374
 							p Copyright &copy;2016, Fresh Coast Capital
+						.columns.small-12.medium-4
+							ul.site-map
+								li
+									a.button.ghost(data-open='form-modal') Contact Us
 			
 			include contact-form.jade
 		

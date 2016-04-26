@@ -78,7 +78,8 @@ var isodate = date.toISOString();
   });
 }];
 
-
-
-
+/* GET form thank you page */
+module.exports.formThankYou = function(req, res) {
+	res.render('thank-you', {title: 'Thank You'});
+}
 

@@ -1,5 +1,25 @@
 extends layout
 
 block content
-	h1= title
-	
+	section.project-intro
+		.grid
+			.row-header
+				.columns.small-12
+					h2 Current Reach
+			.row
+				.columns.small-12.medium-6.large-8
+					p Fresh Coast works in cities looking to revitalize. We currently operate in 7 cities across 4 states: Flint and Battle Creek Michigan, Gary and Elkhart Indiana, Youngstown Ohio, and Kansas City and St Louis Missouri.
+				.columns.small-12.medium-6.large-4.image-container
+					img(src="/images/active-cities.png")
+
+
+	section.project-video
+		.grid
+			.row-header
+				.columns.small-12
+					h2 Mission Video
+			.row
+				.columns.small-12
+					p This 3-minute video explains the social, economic, and environmental impact that is at the core of Fresh Coast's mission.
+					.videoWrapper
+						iframe(src='https://player.vimeo.com/video/163877500', width='500', height='281', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
