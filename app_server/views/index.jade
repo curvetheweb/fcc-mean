@@ -5,16 +5,15 @@ block content
 		.grid
 			.row
 				.columns.small-12
-					//TODO - Get orbit info
 					//TODO - Create static image sets for small screens
 					.orbit(role='region', aria-label='Favorite Space Pictures', data-orbit='', data-timer-delay='3000')
 						ul.orbit-container
 							button.orbit-previous
 								span.show-for-sr Previous Slide
-								| ◀︎
+								i.fa.fa-angle-left
 							button.orbit-next
 								span.show-for-sr Next Slide
-								| ▶︎
+								i.fa.fa-angle-right
 							li.is-active.orbit-slide
 								img.orbit-image(src='/images/slideshow/slide-1-fresh-coast-team.jpg', alt='Fresh Coast Capital Tagline')
 								figcaption.orbit-caption Fresh Coast Capital: Revitalizing communities through innovative and sustainable investment solutions
@@ -114,7 +113,9 @@ block content
 					h2 What We Do
 			.row
 				.columns.small-12.large-4
-					h3.bullet-header Help Your City
+					h3.bullet-header Help Your 
+						br
+						| City
 					ul.custom-list
 						li 
 							i.fa.fa-plus-circle 
@@ -129,7 +130,9 @@ block content
 							i.fa.fa-plus-circle 
 							| City meets EPA regulations for stormwater management
 				.columns.small-12.large-4
-					h3.bullet-header Help Your Community
+					h3.bullet-header Help Your 
+						br
+						| Community
 					ul.custom-list
 						li 
 							i.fa.fa-plus-circle 
@@ -151,7 +154,9 @@ block content
 							| Expanded urban agriculture
 
 				.columns.small-12.large-4
-					h3.bullet-header Help Your Environment
+					h3.bullet-header Help Your 
+						br
+						| Environment
 					ul.custom-list
 						li 
 							i.fa.fa-plus-circle 
@@ -165,6 +170,3 @@ block content
 						li 
 							i.fa.fa-plus-circle 
 							| Soil &amp; groundwater remediation
-			.row
-				.columns.small-12
-					a.button.ghost.expanded(data-open='form-modal') Learn More by Contacting Us

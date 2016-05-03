@@ -11,7 +11,7 @@ app.set('views', path.join(__dirname, '..', 'views'));
 app.set('view engine', 'jade');
  
 mailer.extend(app, {
-  from: 'no-reply@freshcoastcapital.com',
+  from: 'Fresh Coast Capital <no-reply@freshcoastcapital.com>',
   host: 'smtp.gmail.com', // hostname 
   secureConnection: true, // use SSL 
   port: 465, // port for secure SMTP 
@@ -61,7 +61,7 @@ date.setHours(date.getHours() - 5);
 var isodate = date.toISOString();
 	
 	app.mailer.send('email', {
-    to: 'twilliams@curvetheweb.com, laura@freshcoastcapital.com, april@freshcoastcapital.com', // REQUIRED. This can be a comma delimited string just like a normal email to field.  
+    to: 'twilliams@curvetheweb.com', // REQUIRED. This can be a comma delimited string just like a normal email to field.
     subject: 'New Lead Generated at ' + isodate, // REQUIRED. 
     ContactName: req.body.contactName,
 		Organization: req.body.contactOrgName,
