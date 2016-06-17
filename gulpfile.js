@@ -6,10 +6,15 @@ var ignore = require('gulp-ignore');
 var uglify = require('gulp-uglify');
 var gutil = require('gulp-util');
 var babel = require('gulp-babel');
+var cleanCSS = require('gulp-clean-css');
 
 gulp.task('sass', function () {
   return gulp.src(['./app_server/scss/*.scss'])
     .pipe(sass().on('error', sass.logError))
+		.pipe(cleanCSS({debug: true}, function(details) {
+            console.log(details.name + ': ' + details.stats.originalSize);
+            console.log(details.name + ': ' + details.stats.minifiedSize);
+        }))
     .pipe(gulp.dest('./public/stylesheets/'));
 });
  
