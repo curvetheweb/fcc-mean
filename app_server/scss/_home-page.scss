@@ -1,0 +1,26 @@
+.orbit {
+	margin-top: 1rem;
+
+	.orbit-previous, .orbit-next {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			z-index: 10;
+			padding: 2rem 1rem;
+			color: #fefefe;
+	}
+	
+	.orbit-caption {
+    bottom: 1.5rem; 
+    width: 50%;
+    left: 2rem;
+    border: 2px solid $site-blue;
+		
+		@include breakpoint(medium down) { 
+			font-size: .75rem;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+		}
+	}
+}

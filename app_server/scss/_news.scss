@@ -1,0 +1,25 @@
+.caption {
+    display: inline-block;
+    font-size: .75rem;
+    color: #ccc;
+    font-style: italic;
+}
+
+.news-headline {
+    font-weight: bold;
+    margin: 0;
+}
+
+.news-text {
+    font-size: .75rem;
+}
+
+.news-item {
+	img {
+		padding-top: .3rem;
+	}
+}
+
+.news-divide {
+	border-bottom: 1px solid $site-blue
+}

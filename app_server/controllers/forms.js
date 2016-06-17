@@ -23,7 +23,7 @@ mailer.extend(app, {
 });
 
 
-/* POST generic contact form */
+/* POST generic contact form at  */
 module.exports.contactForm = [function(req, res, next) {
 	var oContact = {ContactName: req.body.contactName,
 								  Organization: req.body.contactOrgName,
@@ -61,7 +61,7 @@ date.setHours(date.getHours() - 5);
 var isodate = date.toISOString();
 	
 	app.mailer.send('email', {
-    to: 'twilliams@curvetheweb.com, laura@freshcoastcapital.com, april@freshcoastcapital.com', // REQUIRED. This can be a comma delimited string just like a normal email to field.
+    to: 'twilliams@curvetheweb.com', // REQUIRED. This can be a comma delimited string just like a normal email to field.
     subject: 'New Lead Generated at ' + isodate, // REQUIRED. 
     ContactName: req.body.contactName,
 		Organization: req.body.contactOrgName,

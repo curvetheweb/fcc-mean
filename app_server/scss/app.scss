@@ -1,0 +1,161 @@
+@import 'settings';
+@import '../../node_modules/foundation-sites/scss/foundation';
+@import '../../node_modules/motion-ui/motion-ui';
+
+@include foundation-everything;
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+/* HEADER STYLING */
+//.top-bar {
+//	border-bottom: 4px solid $site-blue;
+//	padding-bottom: 0;
+//}
+
+.no-js {
+  @include breakpoint(small only) {
+    .top-bar {
+      display: none;
+    }
+  } 
+
+  @include breakpoint(medium) {
+    .title-bar {
+      display: none;
+    }
+  }
+}
+
+body {
+	font-family: $site-font;
+}
+
+.top-bar {
+	padding-bottom: 0;
+}
+
+.top-bar-right {
+	box-sizing: border-box;
+  padding-top: rem-calc(10);
+}
+
+.logo {
+	height: 60px; 
+}
+
+.main-nav {
+	padding-top: 1.75rem;
+}
+
+.call-out {
+	color: $white;
+	font-style: italic;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.highlight {
+	background-color: $site-brown;
+	color: $white;
+	padding: 1rem;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	
+	i.fa {
+		position: absolute;
+    top: -5px;
+    left: -7px;
+    font-size: 2.5rem;
+	}
+}
+
+.reversed {
+	* {
+		color: $white;
+	}
+	
+	.row-header {
+		border-bottom-color: $white;
+	}
+}
+
+.bullet-header {
+	background-color: $site-blue;
+	color: white;
+	padding: 1rem;
+	width: 100%;
+}
+
+.ghost {
+	background-color: $white;
+	color: $site-blue;
+	border: 1px solid $site-blue;
+}
+
+.site-map {
+	list-style: none;
+	margin: 2rem 0;
+	
+	ul {
+		list-style: none;
+	}
+}
+
+footer { 
+	background-color: $site-blue;
+	border-top: 4px solid $white;
+	padding-bottom: 3rem;
+} 
+
+section, footer {
+	&.divider {
+    border-bottom: 4px solid #fff;
+    background-color: $site-blue;
+    padding: 1rem 0 2rem;
+	
+		& + * {
+			padding: 3rem 0;
+			border-top: 4px solid $site-blue;
+		}
+		
+		.image-container {
+			text-align: center;
+		}
+	}
+	
+ 	.row-header {
+		@extend .row;
+		border-bottom: 1px solid $site-blue;
+		margin-bottom: 1rem;
+	}
+	
+	&:nth-last-child(2) {
+		border-bottom: 4px solid $site-blue;
+	}
+	
+}
+
+.custom-list {
+	list-style-type: none;
+	padding: 0;
+	margin-left: 0;
+	
+	i {
+		color: $site-blue;
+		margin-right: 1rem;
+	}
+}
+
+.form-error {
+	background-color: #ec5840;
+	margin-top: -1rem;
+	color: $white;
+	padding: .25rem .5rem;
+}
+
+@import 'home-page';
+@import 'news'; 
+@import 'about';
+@import 'projects';
