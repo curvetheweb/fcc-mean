@@ -10,7 +10,7 @@ module.exports.index = function (req, res) {
 	  access_token_secret: 'eujEwY3gn2HxPHJQX02KCi4vAdHFPWPp6v5eNOjF4eTsh'
 	});
 	
-	var receivedTweets = twitterClient.get('statuses/user_timeline', {screen_name: 'freshcoastcap', count: 2, 'include_rts': false, 'exclude_replies': true}, function(error, tweets, response) {
+	var receivedTweets = twitterClient.get('statuses/user_timeline', {screen_name: 'freshcoastcap', count: 3, 'include_rts': true, 'exclude_replies': true}, function(error, tweets, response) {
 	    
 	    res.render('index', {title: 'Home', current_tweets: tweets});
 	    

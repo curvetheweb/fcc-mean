@@ -31,12 +31,25 @@ block content
 								span.show-for-sr Fresh Coast’s vacant land program partners with cities to install and finance park-like working landscapes that revitalize vacant land
 							button(data-slide='2')
 								span.show-for-sr Fresh Coast’s green infrastructure program partners with cities to prioritize stormwater management alongside community, environmental and economic outcomes
+	
 	section.divider
 		.row
 			.columns.small-12
 				p.call-out Fresh Coast Capital revitalizes unused urban land into networks of productive green space
 					br
 					| that help the community and promote resiliency. 
+	section.tweets
+		.grid
+			.row-header
+				.columns.small-12
+					h2 Social Media
+			.row
+				each tweet in current_tweets
+					.columns.small-12.medium-12.large-4
+						p= tweet.text
+	
+	section.divider
+
 	section.news
 		.grid
 			.row-header
@@ -78,6 +91,7 @@ block content
 			.row
 				.columns.small-6.small-offset-2
 					hr.news-divide
+					
 			.row
 				.columns.small-12.medium-12.large-5
 					.row.news-item
