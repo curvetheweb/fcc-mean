@@ -46,7 +46,7 @@ block content
 			.row
 				each tweet in current_tweets
 					.columns.small-12.medium-12.large-4
-						p= tweet.text
+						p!= tweet.htmltext
 	
 	section.divider
 
