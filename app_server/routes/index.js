@@ -5,6 +5,7 @@ var ctrlMain = require('../controllers/main');
 var ctrlAbout = require('../controllers/about');
 var ctrlPress = require('../controllers/press');
 var ctrlForms = require('../controllers/forms');
+var ctrlJobs = require('../controllers/jobs')
 
 /* Home Page */
 router.get('/', ctrlMain.index);
@@ -19,6 +20,9 @@ router.get('/press', ctrlPress.press);
 
 /* Form Handling */
 router.post('/contact', ctrlForms.contactForm);
-router.get('/contact/thank-you', ctrlForms.formThankYou)
+router.get('/contact/thank-you', ctrlForms.formThankYou);
+
+/* Hidden */
+router.get('/jobs', ctrlJobs.jobs);
 
 module.exports = router;

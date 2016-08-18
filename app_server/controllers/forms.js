@@ -10,6 +10,26 @@ var path = require('path');
 app.set('views', path.join(__dirname, '..', 'views'));
 app.set('view engine', 'jade');
  
+
+var reCAPTCHA=require('recaptcha2')
+ 
+recaptcha=new reCAPTCHA({
+  siteKey:'6LcjsR8TAAAAAJIVK4qldsipo_Xa9cDgORnvdWv-',
+  secretKey:'6LcjsR8TAAAAAHiRcEXhqxNFOVqg9a_esWP8Blvd'
+})
+
+function submitForm(req,res){
+  recaptcha.validateRequest(req)
+  .then(function(){
+    // validated and secure
+    res.json({formSubmit:true})
+  })
+  .catch(function(errorCodes){
+    // invalid
+    res.json({formSubmit:false,errors:recaptcha.translateErrors(errorCodes)});// translate error codes to human readable text
+  });
+}
+
 mailer.extend(app, {
   from: 'Fresh Coast Capital <no-reply@freshcoastcapital.com>',
   host: 'smtp.gmail.com', // hostname 
