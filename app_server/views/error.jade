@@ -1,6 +1,11 @@
 extends layout
 
 block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+	section.slideshow
+		.grid
+			.row
+				.columns.small-12
+					h1 We're Sorry
+					p It appears the page you're looking for may not exist. Please try again, or go back to our 
+						a(href="/") homepage
+						| .
