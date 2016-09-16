@@ -31,23 +31,6 @@ block content
 								span.show-for-sr Fresh Coast’s vacant land program partners with cities to install and finance park-like working landscapes that revitalize vacant land
 							button(data-slide='2')
 								span.show-for-sr Fresh Coast’s green infrastructure program partners with cities to prioritize stormwater management alongside community, environmental and economic outcomes
-	section.tweets
-		.grid
-			.row-header
-				.columns.small-12
-					h2 Social Media
-			.row
-				each tweet in current_tweets
-					.columns.small-12.medium-12.large-4
-						p!= tweet
-			hr.news-divide
-			.row
-				.columns.small-12.social-icons
-					p Follow us on 
-						a(href="https://twitter.com/freshcoastcap" target='_blank')	Twitter 
-							i.fa.fa-twitter
-						
-	
 	section.divider
 		.row
 			.columns.small-12
@@ -131,7 +114,7 @@ block content
 				.columns.small-12.medium-12.large-5
 					.row.news-item
 						.columns.small-12.medium-4.img
-							img(src='images/news/USDA-Seal.jpg')
+							img(src='images/news/USDA-Logo.jpg')
 							br
 							p.caption Img: nal.usda.gov
 						.columns.small-12.medium-8
@@ -145,9 +128,9 @@ block content
 				.columns.small-12.medium-12.large-5
 					.row.news-item
 						.columns.small-12.medium-4.img
-							img(src='//placehold.it/137x103?text=Image+Not+Available')
+							img(src='images/news/Journal-Star.jpg')
 							br
-							p.caption Image Not Available
+							p.caption Img: PJStar.com
 						.columns.small-12.medium-8
 							p.news-headline
 								a(href='http://www.pjstar.com/news/20160909/peoria-and-partners-get-1-million-stormwater-innovation-grant', target='_blank') Peoria and partners get $1 million stormwater innovation grant
@@ -199,4 +182,22 @@ block content
 				.columns.small-12.med-10.end
 					a.button.ghost.expanded(href='/press')
 						| See All Fresh Coast Capital News 
+	section.divider
+	section.tweets
+		.grid
+			.row-header
+				.columns.small-12
+					h2 Social Media
+			.row
+				each tweet in current_tweets
+					.columns.small-12.medium-12.large-4
+						p!= tweet
+			hr.news-divide
+			.row
+				.columns.small-12.social-icons
+					p Follow us on 
+						a(href="https://twitter.com/freshcoastcap" target='_blank')	Twitter 
+							i.fa.fa-twitter
+
+	
 	
