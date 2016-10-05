@@ -74,25 +74,12 @@ section.divider {
 	.graph-box {
 		position: relative;
 		margin-top: 24px;
-		
-		@media screen and (max-width: 685px) {
-			text-align: center;
-		}
-		
-		* {
-			float: left;
-			
-			@media screen and (max-width: 685px) {
-				float: none;
-			}
-		}
+		text-align: center;
 		
 		.increase-arrow {
 			width: 60px;
 			height: 150px;
 			margin-right: -3px;
-			margin-left: -10px;
-			margin-top: 10px;
 		}
 		
 		.decrease-arrow {
@@ -115,33 +102,11 @@ section.divider {
 			
 			&:last-of-type {
 				margin-left: 10px;
-				vertical-align: bottom;
-				margin-bottom: 0;
 			}
-		}
-		
-		aside.caption {
-			color: #fff;
-			border-top: 1px solid #fff;
-			border-bottom: 4px solid #fff;
-			padding: 10px 0;
-		}
-		
-		.callout-box {
-			width: 40%;
-			margin-left: 5%;
 			
-//			@include breakpoint(small only) {
-//				clear: both;
-//				width: 100%;
-//				margin: 25px 0 0;
-//			}
-			
-			@media screen and (max-width: 685px) {
-				clear: both;
-				width: 100%;
-				margin: 25px 0 0;
-			}
+			@include breakpoint(medium only) {
+				font-size: 22px;
+			} 
 		}
 	}
 }

@@ -13,6 +13,13 @@
 //	padding-bottom: 0;
 //}
 
+//$sm-only: "screen and (max-width: 39.9375em)";
+//$md-only: "screen and (min-width: 40em) and (max-width: 63.9375em)";
+//$lg-only: "screen and (min-width: 64em) and (max-width: 74.9375em)";
+//$md-plus: "screen and (min-width: 40em)";
+//$lg-plus: "screen and (min-width: 64em)";
+
+
 .no-js {
   @include breakpoint(small only) {
     .top-bar {
@@ -157,6 +164,11 @@ section, footer {
 
 .hidden {
 	display: none;
+}
+
+.embiggen {
+	display: block;
+	transform: scale(2,2);
 }
 
 @import 'home-page';
