@@ -111,19 +111,19 @@ block content
 			.row.icons.tabs#infographic-tabs(data-tabs='')
 				.columns.small-6.large-3.tabs-title
 					a(data-project='ufo', href="#urban-forestry")
-						img(src="/images/infographic/urban-forestry.png").js-info-link
+						img(src="/images/infographic/urban-forestry.svg").js-info-link
 					p.info-label Urban Forestry
 				.columns.small-6.large-3.tabs-title
 					a(data-project='uag', href="#urban-agriculture")
-						img(src="/images/infographic/urban-agriculture.png").js-info-link
+						img(src="/images/infographic/urban-agriculture.svg").js-info-link
 					p.info-label Urban Agriculture
 				.columns.small-6.large-3.tabs-title
 					a(data-project='wwm', href="#wastewater-management")
-						img(src="/images/infographic/wastewater-management.png").js-info-link
+						img(src="/images/infographic/wastewater-management.svg").js-info-link
 					p.info-label Wastewater Management
 				.columns.small-6.large-3.tabs-title
 					a(data-project='wet', href="#wetlands")
-						img(src="/images/infographic/wetlands.png").js-info-link
+						img(src="/images/infographic/wetlands.svg").js-info-link
 					p.info-label Wetlands
 			.row
 				.columns.small-12
@@ -132,7 +132,7 @@ block content
 							h3 Urban Forestry
 							.row.row-tab-content
 								.columns.small-12
-									.graph-box
+									.graph-box.columns.small-12.large-5
 										p.label Increased
 											| Canopy
 											| (10%)
@@ -141,8 +141,20 @@ block content
 										p.label Decreased
 											| Crime 
 											| (12%)
+									.columns.small-12.large-4.end
 										.callout-box.clearfix
 											aside.caption We believe that large street trees can reduce crime by signaling to a potential criminal that a neighborhood is better cared for and, therefore, a criminal is more likely to be caught.
+											
+											p.caption 
+												sup 1 
+												a(href="http://www.treehugger.com/health/more-trees-means-less-crime-baltimore-study-shows.html") More Trees = Less Crime in Baltimore, Study Shows
+							.row.row-tab-content
+								.columns.small-12
+									.graph-box.columns.small-12.medium-6.large-4
+										canvas#js-vacant-land-chart
+									.graph-box.columns.small-12.medium-6.large-4
+									.graph-box.columns.small-12.medium-6.large-4
+										canvas#js-tree-plantings-chart
 						.tabs-panel#urban-agriculture
 							h3 Urban Agriculture
 						.tabs-panel#wastewater-management
