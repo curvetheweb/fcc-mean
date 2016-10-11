@@ -132,29 +132,57 @@ block content
 							h3 Urban Forestry
 							.row.row-tab-content
 								.columns.small-12
-									.graph-box.columns.small-12.large-5
-										p.label Increased
-											| Canopy
-											| (10%)
-										img.increase-arrow(src="/images/infographic/arrow-icon.svg")
-										img.decrease-arrow(src="/images/infographic/arrow-icon.svg")
-										p.label Decreased
-											| Crime 
-											| (12%)
-									.columns.small-12.large-4.end
+									label Effect of Increased Tree Canopy on Crime Rate
+									.graph-box.columns.small-12.medium-6.large-4
+										p.label Increased Canopy (10%)
+										.images
+											img.increase-arrow(src="/images/infographic/arrow-icon.svg")
+											img.decrease-arrow(src="/images/infographic/arrow-icon.svg")
+										p.label Decreased Crime (12%)
+									.columns.small-12.medium-6.large-4
+										.callout-box.clearfix
+											aside 
+												h4 Fresh Coast can help
+												ul.custom-list
+													li 
+														i.fa.fa-plus-circle 
+														| City saves money because Fresh Coast maintains properties
+													li 
+														i.fa.fa-plus-circle 
+														| Operating business increases city tax base
+													li 
+														i.fa.fa-plus-circle 
+														| Vacant land reuse creates livable spaces to attract and retain residents
+													li 
+														i.fa.fa-plus-circle 
+														| City meets EPA regulations for stormwater management
+									.columns.small-12.medium-6.large-4
 										.callout-box.clearfix
 											aside.caption We believe that large street trees can reduce crime by signaling to a potential criminal that a neighborhood is better cared for and, therefore, a criminal is more likely to be caught.
-											
-											p.caption 
-												sup 1 
-												a(href="http://www.treehugger.com/health/more-trees-means-less-crime-baltimore-study-shows.html") More Trees = Less Crime in Baltimore, Study Shows
-							.row.row-tab-content
+							.row
+								.columns.small-10.small-offset-1
+									hr.infographic-divide
+							.row.row-tab-content.collapse
 								.columns.small-12
-									.graph-box.columns.small-12.medium-6.large-4
-										canvas#js-vacant-land-chart
-									.graph-box.columns.small-12.medium-6.large-4
-									.graph-box.columns.small-12.medium-6.large-4
-										canvas#js-tree-plantings-chart
+									.row
+										.graph-box.columns.small-12.medium-8.large-5
+											label Effect of Tree Plantings on New Kensington House Prices
+												canvas#js-vacant-land-chart(width="200",height="400")
+										.graph-box.columns.small-12.medium-4.large-2.house-holder
+											img(src="/images/infographic/house.svg")
+										.graph-box.columns.small-12.medium-8.large-5.end
+											label Effect of Tree Plantings on New Kensington House Prices
+												canvas#js-tree-plantings-chart(width="200",height="400")
+								.columns.small-12
+									p.caption 
+										sup 1 
+										a(href="http://www.treehugger.com/health/more-trees-means-less-crime-baltimore-study-shows.html") More Trees = Less Crime in Baltimore, Study Shows
+									p.caption
+										sup 2
+										a(href='http://phsonline.org/uploads/resources/The_Determinants_of_Neighborhood_Transformations_in_Philadelphia_Identification_and_Analysis-_The_New_Kensington_Pilot_Study.pdf') The Determinants of Neighborhood Transformations in Philadelphia Identification and Analysis: The New Kensington Pilot Study 
+							.row
+								.columns.small-10.small-offset-1
+									hr.infographic-divide
 						.tabs-panel#urban-agriculture
 							h3 Urban Agriculture
 						.tabs-panel#wastewater-management

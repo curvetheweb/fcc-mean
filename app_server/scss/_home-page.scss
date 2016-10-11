@@ -50,7 +50,24 @@ section.divider {
 	}
 }
 
+.infographic-divide {
+	border-bottom: 4px solid #fff;
+	margin: 24px 0 12px;
+}
+
 .infographic {
+	
+	.custom-list {
+		
+		li, i {
+			color: #fff;
+			font-size: 12px;
+		}
+		
+		i {
+			margin-right: .5rem;
+		}
+	}
 	sup {
 		float:none;
 	}
@@ -74,14 +91,37 @@ section.divider {
 		border-top: 1px solid #fff;
 	}
 	
+	.tree-plantings-chart:last-child {
+		@include breakpoint(medium only) {
+			float: left;
+			clear: both;
+		}
+	}
+	
+	label {
+		font-weight: bold;
+		color: #fff;
+	}
 	.graph-box {
 		position: relative;
-		margin-top: 24px;
+//		margin-top: 24px;
+		min-height: 225px;
 		
-		@include breakpoint(small) {
+//		@include breakpoint(small) {
+//			text-align: center;
+//		}
+		
+		.images {
 			text-align: center;
+			
+			@include breakpoint(small only) {
+				float: left;
+				clear: both;
+				width: 100%;
+				display: block;
+				padding: 0 0 10px;
+			}
 		}
-		
 		.increase-arrow {
 			width: 60px;
 			height: 150px;
@@ -89,10 +129,13 @@ section.divider {
 			margin-left: -10px;
 			margin-top: 10px;
 			
+			
 			@include breakpoint(small only) {
-				width: 30px;
-				height: 75px;
-				margin-right: 0;
+//				float: left;
+//				clear: both;
+//				width: 30px;
+//				height: 75px;
+//				margin-right: 0;
 			}
 		}
 		
@@ -102,19 +145,26 @@ section.divider {
 			margin-left: -3px;
 			transform: rotate(180deg);
 			
+			
 			@include breakpoint(small only) {
-				width: 30px;
-				height: 75px;
-				margin-left: 0;
+//				width: 30px;
+//				height: 75px;
+//				margin-left: 0;
+//				float: left;
 			}
 		}
-		
+		&.house-holder {
+			@include breakpoint(small only) {
+				text-align: center;
+			}
+		}
 		.label {
 			white-space: pre;
 			line-height: 1.25;
 			font-size: 22px;
 			padding: 0;
-			text-align: left;
+			width: 100%;
+			text-align: center;	
 			
 			&:first-of-type {
 				margin-right: 10px;
@@ -125,9 +175,15 @@ section.divider {
 				vertical-align: bottom;
 				margin-bottom: 0;
 			}
+			@include breakpoint(medium only) {
+				text-align: center;
+				width: 100%;
+			}
 			
 			@include breakpoint(small only) {
 				font-size: 16px;
+				
+				float: left;
 			}
 		}
 	}
