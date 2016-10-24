@@ -18,7 +18,7 @@ module.exports.index = function (req, res) {
 		var aTweets = new Array();
 		
 		try {
-			tweet.forEach(function(tweet, index, arr){
+			tweets.forEach(function(tweet, index, arr){
 				if(tweet.hasOwnProperty('retweeted_status')) {
 					aTweets[index] = twittertext.autoLink('RT @' + tweet.retweeted_status.user.screen_name + ': ' + tweet.retweeted_status.text);
 				} else {	
