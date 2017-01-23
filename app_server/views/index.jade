@@ -269,24 +269,16 @@ block content
 			.row-header
 				.columns.small-12
 					h2 Social Media
-            .row
+			.row
+				each tweet in current_tweets
+					.columns.small-12.medium-12.large-4
+						p!= tweet
+			hr.news-divide
+			.row
 				.columns.small-12.social-icons
 					p Follow us on 
 						a(href="https://twitter.com/freshcoastcap", target='_blank') Twitter 
 							i.fa.fa-twitter
-                    
-                    
-                    
-//			.row
-//				each tweet in current_tweets
-//					.columns.small-12.medium-12.large-4
-//						p!= tweet
-//			hr.news-divide
-//			.row
-//				.columns.small-12.social-icons
-//					p Follow us on 
-//						a(href="https://twitter.com/freshcoastcap", target='_blank') Twitter 
-//							i.fa.fa-twitter
 
 	
 	

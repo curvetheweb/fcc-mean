@@ -14,25 +14,25 @@ module.exports.index = function (req, res) {
 	
 	
 	
-//	var receivedTweets = twitterClient.get('statuses/user_timeline', {screen_name: 'freshcoastcap', count: 3, 'include_rts': true, 'exclude_replies': true}, function(error, tweets, response) {
-//		var aTweets = new Array();
-//		
-//		try {
-//			tweets.forEach(function(tweet, index, arr){
-//				if(tweet.hasOwnProperty('retweeted_status')) {
-//					aTweets[index] = twittertext.autoLink('RT @' + tweet.retweeted_status.user.screen_name + ': ' + tweet.retweeted_status.text);
-//				} else {	
-//					aTweets[index] = twittertext.autoLink(tweet.text);
-//				}
-//			});
-//		}
-//		catch (e) {
-//		   // statements to handle any exceptions
-//		   console.log(e); // pass exception object to error handler
-//		}
-//		
-//		
-//	    res.render('index', {title: 'Home', current_tweets: aTweets});
-//	});
+	var receivedTweets = twitterClient.get('statuses/user_timeline', {screen_name: 'freshcoastcap', count: 3, 'include_rts': true, 'exclude_replies': true}, function(error, tweets, response) {
+		var aTweets = new Array();
+		
+		try {
+			tweets.forEach(function(tweet, index, arr){
+				if(tweet.hasOwnProperty('retweeted_status')) {
+					aTweets[index] = twittertext.autoLink('RT @' + tweet.retweeted_status.user.screen_name + ': ' + tweet.retweeted_status.text);
+				} else {	
+					aTweets[index] = twittertext.autoLink(tweet.text);
+				}
+			});
+		}
+		catch (e) {
+		   // statements to handle any exceptions
+		   console.log(e); // pass exception object to error handler
+		}
+		
+		
+	    res.render('index', {title: 'Home', current_tweets: aTweets});
+	});
 
 }
