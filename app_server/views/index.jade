@@ -6,270 +6,61 @@ block content
 			.row
 				.columns.small-12
 					//TODO - Create static image sets for small screens
-					.orbit(role='region', aria-label='Favorite Space Pictures', data-orbit='', data-timer-delay='4500')
+					.orbit(role='region', aria-label='', data-orbit='', data-timer-delay='2500')
 						ul.orbit-container
-							button.orbit-previous
-								span.show-for-sr Previous Slide
-								i.fa.fa-angle-left
-							button.orbit-next
-								span.show-for-sr Next Slide
-								i.fa.fa-angle-right
 							li.orbit-slide
 								img.orbit-image(src='/images/slideshow/slide-2-poplar-trees-md.jpg', alt='Land Program')
-								figcaption.orbit-caption Fresh Coast’s Vacant Land Program partners with cities to install and finance park-like working landscapes that revitalize vacant land 
+								figcaption.orbit-caption 
+									span Fresh Coast’s Vacant Land Program partners with cities to install and finance park-like working landscapes that revitalize vacant land 
 							li.orbit-slide
-								img.orbit-image(src='/images/slideshow/slide-3-urban-landscape-md.jpg', alt='Infrastructure Program')
-								figcaption.orbit-caption Fresh Coast’s Green Infrastructure Program partners with cities to prioritize stormwater management alongside community, environmental and economic outcomes
-						nav.orbit-bullets
-							button.is-active(data-slide='0')
-								span.show-for-sr Fresh Coast’s vacant land program partners with cities to install and finance park-like working landscapes that revitalize vacant land								
-								span.show-for-sr Current Slide
-							button(data-slide='1')
-								span.show-for-sr Fresh Coast’s green infrastructure program partners with cities to prioritize stormwater management alongside community, environmental and economic outcomes
+								img.orbit-image(src='/images/slideshow/test1.jpg', alt='Infrastructure Program')
+								figcaption.orbit-caption 
+									span Fresh Coast’s Vacant Land Program partners with cities to install and finance park-like working landscapes that revitalize vacant land 
+							li.orbit-slide
+								img.orbit-image(src='/images/slideshow/test2.jpg', alt='Infrastructure Program')
+								figcaption.orbit-caption 
+									span Fresh Coast’s Vacant Land Program partners with cities to install and finance park-like working landscapes that revitalize vacant land 
+							li.orbit-slide
+								img.orbit-image(src='/images/slideshow/test3.jpg', alt='Infrastructure Program')
+								figcaption.orbit-caption 
+									span Fresh Coast’s Vacant Land Program partners with cities to install and finance park-like working landscapes that revitalize vacant land 
+							li.orbit-slide
+								img.orbit-image(src='/images/slideshow/test4.jpg', alt='Infrastructure Program')
+								figcaption.orbit-caption 
+									span Fresh Coast’s Vacant Land Program partners with cities to install and finance park-like working landscapes that revitalize vacant land 
 	section.divider
 		.row
 			.columns.small-12
-				p.call-out Fresh Coast Capital revitalizes unused urban land into networks of productive green space
-					br
-					| that help the community and promote resiliency. 
-		
-	section.community
-		.grid
-			.row-header
-				.columns.small-12
-					h2 What We Do
-			.row
-				.columns.small-12.large-4
-					h3.bullet-header Help Your 
-						br
-						| City
-					ul.custom-list
-						li 
-							i.fa.fa-plus-circle 
-							| City saves money because Fresh Coast maintains properties
-						li 
-							i.fa.fa-plus-circle 
-							| Operating business increases city tax base
-						li 
-							i.fa.fa-plus-circle 
-							| Vacant land reuse creates livable spaces to attract and retain residents
-						li 
-							i.fa.fa-plus-circle 
-							| City meets EPA regulations for stormwater management
-				.columns.small-12.large-4
-					h3.bullet-header Help Your 
-						br
-						| Community
-					ul.custom-list
-						li 
-							i.fa.fa-plus-circle 
-							| Jobs for local contractors, engineering partners, and nonprofit partners
-						li 
-							i.fa.fa-plus-circle 
-							| Property value improvements
-						li 
-							i.fa.fa-plus-circle 
-							| Lower crime
-						li 
-							i.fa.fa-plus-circle 
-							| Health benefits 
-						li 
-							i.fa.fa-plus-circle 
-							| Educational programming opportunities
-						li 
-							i.fa.fa-plus-circle 
-							| Expanded urban agriculture
-
-				.columns.small-12.large-4
-					h3.bullet-header Help Your 
-						br
-						| Environment
-					ul.custom-list
-						li 
-							i.fa.fa-plus-circle 
-							| Stormwater and green infrastructure
-						li 
-							i.fa.fa-plus-circle 
-							| Climate resiliency
-						li 
-							i.fa.fa-plus-circle 
-							| Carbon sequestration
-						li 
-							i.fa.fa-plus-circle
-							| Soil &amp; groundwater remediation
-							
-	section.divider.infographic
-		.grid
-			.row-header
-				.columns.small-12
-					h2 We Are Your Partners
-			.row.icons.tabs#infographic-tabs
-				.columns.small-6.large-3.tabs-title
-					img(src="/images/infographic/urban-forestry.svg").js-info-link
-					p.info-label Urban Forestry
-				.columns.small-6.large-3.tabs-title
-					img(src="/images/infographic/urban-agriculture.svg").js-info-link
-					p.info-label Urban Agriculture
-				.columns.small-6.large-3.tabs-title
-					img(src="/images/infographic/wastewater-management.svg").js-info-link
-					p.info-label Stormwater Management
-				.columns.small-6.large-3.tabs-title
-					img(src="/images/infographic/wetlands.svg").js-info-link
-					p.info-label Wetlands
-			.row
-				.columns.small-12
-					.tabs-content
-						.tabs-panel#urban-forestry
-							h3 Urban Forestry
-							.row.row-tab-content
-								.columns.small-12
-									label Effect of Increased Tree Canopy on Crime Rate
-									.graph-box.columns.small-12.medium-6.large-4
-										p.label Increased Canopy (10%)
-										.images
-											img.increase-arrow(src="/images/infographic/arrow-icon.svg")
-											img.decrease-arrow(src="/images/infographic/arrow-icon.svg")
-										p.label Decreased Crime (12%)
-									.columns.small-12.medium-6.large-4
-										.callout-box.clearfix
-											aside 
-												h4 Fresh Coast can help
-												ul.custom-list
-													li 
-														i.fa.fa-plus-circle 
-														| City saves money because Fresh Coast maintains properties
-													li 
-														i.fa.fa-plus-circle 
-														| Operating business increases city tax base
-													li 
-														i.fa.fa-plus-circle 
-														| Vacant land reuse creates livable spaces to attract and retain residents
-													li 
-														i.fa.fa-plus-circle 
-														| City meets EPA regulations for stormwater management
-									.columns.small-12.medium-6.large-4
-										.callout-box.clearfix
-											aside.caption We believe that large street trees can reduce crime by signaling to a potential criminal that a neighborhood is better cared for and, therefore, a criminal is more likely to be caught.
-							.row
-								.columns.small-10.small-offset-1
-									hr.infographic-divide
-							.row.row-tab-content.collapse
-								.columns.small-12
-									.row
-										.graph-box.columns.small-12.medium-8.large-5
-											label Effect of Tree Plantings on New Kensington House Prices
-												canvas#js-vacant-land-chart(width="200",height="400")
-										.graph-box.columns.small-12.medium-4.large-2.house-holder
-											img(src="/images/infographic/house.svg")
-										.graph-box.columns.small-12.medium-8.large-5.end
-											label Effect of Tree Plantings on New Kensington House Prices
-												canvas#js-tree-plantings-chart(width="200",height="400")
-								.columns.small-12
-									p.caption 
-										sup 1 
-										a(href="http://www.treehugger.com/health/more-trees-means-less-crime-baltimore-study-shows.html") More Trees = Less Crime in Baltimore, Study Shows
-									p.caption
-										sup 2
-										a(href='http://phsonline.org/uploads/resources/The_Determinants_of_Neighborhood_Transformations_in_Philadelphia_Identification_and_Analysis-_The_New_Kensington_Pilot_Study.pdf') The Determinants of Neighborhood Transformations in Philadelphia Identification and Analysis: The New Kensington Pilot Study 
-							.row
-								.columns.small-10.small-offset-1
-									hr.infographic-divide
-						.tabs-panel#urban-agriculture
-							h3 Urban Agriculture
-						.tabs-panel#stormwater-management
-							h3 Stormwater Management
-						.tabs-panel#wetlands
-							h3 Wetlands
-				
-							
-	section.news.last-page-item
-		.grid
-			.row-header
-				.columns.small-12
-					h2 Recent News &amp; Press
-			.row
-				.columns.small-12.medium-12.large-5
-					.row.news-item
-						.columns.small-12.medium-4.img
-							img(src='images/news/USDA-Logo.jpg')
-							br
-							p.caption Img: nal.usda.gov
-						.columns.small-12.medium-8
-							p.news-headline
-								a(href='http://freshcoastcapital.com/files/Press-Release-2016-09-08.pdf', target="_blank") Fresh Coast wins $1M USDA grant for Conservation Innovation
-							p.news-text
-								| Agriculture Secretary Tom Vilsack announced today that Fresh Coast Capital is the recipient of a $940,800 grant to install a pioneering green stormwater infrastructure project in Peoria, Illinois....
-								br
-								a(href='http://freshcoastcapital.com/files/Press-Release-2016-09-08.pdf', target='_blank') Full Press Release at FreshCoastCapital.com &nbsp;
-									i.fa.fa-external-link
-				.columns.small-12.medium-12.large-5
-					.row.news-item
-						.columns.small-12.medium-4.img
-							img(src='images/news/Journal-Star.jpg')
-							br
-							p.caption Img: PJStar.com
-						.columns.small-12.medium-8
-							p.news-headline
-								a(href='http://www.pjstar.com/news/20160909/peoria-and-partners-get-1-million-stormwater-innovation-grant', target='_blank') Peoria and partners get $1 million stormwater innovation grant
-							p.news-text
-								| A collaboration between the city of Peoria, Chicago-based real estate developer Fresh Coast Capital, AKRF and The Gifts in the Moment Foundation was awarded a nearly $1 million Conservation Innovation Grant to install a stormwater solution pilot project on the south side.....
-								br
-								a(href='http://www.pjstar.com/news/20160909/peoria-and-partners-get-1-million-stormwater-innovation-grant', target='_blank') Full Story at PJStar.com &nbsp;
-									i.fa.fa-external-link
-				
-				.columns.small-12.medium-12.large-2
-					aside.highlight 
-						i.fa.fa-exclamation-circle(aria-hidden="true")  
-						p In 2016, Fresh Coast will plant approximately 27,000 trees.
-			.row
-				.columns.small-6.small-offset-2
-					hr.news-divide
-					
-			.row
-				.columns.small-12.medium-12.large-5
-					.row.news-item
-						.columns.small-12.medium-4.img
-							img(src='images/news/Kiya-Edwards-KSDK.jpg')
-							br
-							p.caption Img: ksdk.com
-						.columns.small-12.medium-8
-							p.news-headline
-								a(href='http://www.ksdk.com/news/local/tree-farms-replace-vacant-land-in-st-louis/271978150', target="_blank") Tree farms replace vacant land in St. Louis
-							p.news-text
-								| Crews from Fresh Coast Capital and Jeffrey Boyd, ward 22 alderman, planted 1,500 hybrid poplars on 42 parcels of city-owned property....
-								br
-								a(href='http://www.ksdk.com/news/local/tree-farms-replace-vacant-land-in-st-louis/271978150', target='_blank') Full Story at KSDK.com &nbsp;
-									i.fa.fa-external-link
-				.columns.small-12.medium-12.large-5.end
-					.row.news-item
-						.columns.small-12.medium-4.img
-							img(src='images/news/Michigan-Municipal-League.jpg')
-							br
-							p.caption Img: Michigan Municipal League/Flickr
-						.columns.small-12.medium-8
-							p.news-headline
-								a(href='http://e360.yale.edu/feature/greening_rust_belt_cities_detroit_gary_indiana/2999/', target='_blank') Hard-Pressed Rust Belt Cities 
-									| Go Green to Aid Urban Revival
-							p.news-text
-								| Gary, Indiana is joining Detroit and other fading U.S. industrial centers in an effort to turn abandoned neighborhoods and factory sites into gardens, parks, and forests.....
-								br
-								a(href='http://e360.yale.edu/feature/greening_rust_belt_cities_detroit_gary_indiana/2999/', target='_blank') Full Story at Yale Environment 360 &nbsp;
-									i.fa.fa-external-link
-			.row
-				.columns.small-12.med-10.end
-					a.button.ghost.expanded(href='/press')
-						| See All Fresh Coast Capital News 
-	section.divider
-	section.tweets
-		.grid
-			.row-header
-				.columns.small-12
-					h2 Social Media
-			.row
-				.columns.small-12.social-icons
-					p Follow us on 
-						a(href="https://twitter.com/freshcoastcap", target='_blank') Twitter 
-							i.fa.fa-twitter
-
-	
-	
+				h2.center What we do
+				p.call-out We are a mission driven project developer comprised of a experienced team of community organizers, engineers, environmental scientists, and finance professionals. We guide cities to achieve and implement their vision of comprehensive green infrastructure.
+	section.divider.color-1
+		.row
+			.columns.small-12
+				h2.center What we do
+				p.call-out We are a mission driven project developer comprised of a experienced team of community organizers, engineers, environmental scientists, and finance professionals. We guide cities to achieve and implement their vision of comprehensive green infrastructure.
+	section.divider.color-2
+		.row
+			.columns.small-12
+				h2.center What we do
+				p.call-out We are a mission driven project developer comprised of a experienced team of community organizers, engineers, environmental scientists, and finance professionals. We guide cities to achieve and implement their vision of comprehensive green infrastructure.
+	section.divider.color-3
+		.row
+			.columns.small-12
+				h2.center What we do
+				p.call-out We are a mission driven project developer comprised of a experienced team of community organizers, engineers, environmental scientists, and finance professionals. We guide cities to achieve and implement their vision of comprehensive green infrastructure.
+	section.four-column-colors
+		h2.center Our Advantage.
+		br
+		.row
+			.columns.small-12.medium-6.large-3
+					h3.four-color-title Triple-Bottom Line Approach
+					p.four-color-text Commitment to generating financial, social and environmental returns enables trusted relationships with cities and differentiates Fresh Coast from traditional private developers.
+			.columns.small-12.medium-6.large-3
+					h3.four-color-title Triple-Bottom Line Approach
+					p.four-color-text Commitment to generating financial, social and environmental returns enables trusted relationships with cities and differentiates Fresh Coast from traditional private developers.
+			.columns.small-12.medium-6.large-3
+					h3.four-color-title Triple-Bottom Line Approach
+					p.four-color-text Commitment to generating financial, social and environmental returns enables trusted relationships with cities and differentiates Fresh Coast from traditional private developers.
+			.columns.small-12.medium-6.large-3
+					h3.four-color-title Triple-Bottom Line Approach
+					p.four-color-text Commitment to generating financial, social and environmental returns enables trusted relationships with cities and differentiates Fresh Coast from traditional private developers.

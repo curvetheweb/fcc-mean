@@ -121,6 +121,18 @@ section, footer {
     border-bottom: 4px solid #fff;
     background-color: $site-blue;
     padding: 1rem 0 2rem;
+		
+		&.color-1 {
+			background-color: #535353;
+		}
+		
+		&.color-2 {
+			background-color: #20af46;
+		}
+		
+		&.color-3 {
+			background-color: #9eb1b6;
+		}
 	
 		& + * {
 			padding: 3rem 0;
@@ -170,6 +182,69 @@ section, footer {
 	display: block;
 	transform: scale(2,2);
 }
+
+/* Rebuild css */
+.top-bar-title {
+  border-right: 2px solid #ccc;
+}
+
+
+.three-column-colors {
+	.columns {
+		width: 31.56%;
+		margin-right: 2.66%;
+		
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+
+.four-column-colors {
+	.columns {
+		width: 23%;
+		margin-right: 2.66%;
+		border-top-width: 4px;
+		border-top-style: solid;
+		padding-top: 20px;
+		-webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+		-moz-box-shadow:    0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+		box-shadow:         0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+		
+		&:nth-child(1) {
+			border-color: $site-green;
+		}
+		
+		&:nth-child(2) {
+			border-color: $site-blue;
+		}
+		
+		&:nth-child(3) {
+			border-color: $site-grey;
+		}
+		
+		&:nth-child(4) {
+			border-color: $site-red;
+			margin-right: 0;
+		}
+	}
+}
+h3.four-color-title {
+    font-weight: bold;
+    color: #9eb1b6;
+    font-size: 20px;
+}
+
+p.four-color-text {
+    font-size: 14px;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 2.05rem;
+}
+
 
 @import 'home-page';
 @import 'news'; 
