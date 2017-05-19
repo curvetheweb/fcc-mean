@@ -118,9 +118,9 @@ footer {
 
 section, footer {
 	&.divider {
-    border-bottom: 4px solid #fff;
-    background-color: $site-blue;
-    padding: 1rem 0 2rem;
+		border-bottom: 4px solid #fff;
+		background-color: $site-blue;
+		padding: 1rem 0 2rem;
 		
 		&.color-1 {
 			background-color: #535353;
@@ -136,11 +136,39 @@ section, footer {
 	
 		& + * {
 			padding: 3rem 0;
-			border-top: 4px solid $site-blue;
+//			border-top: 4px solid $site-blue;
 		}
 		
 		.image-container {
 			text-align: center;
+		}
+	}
+  
+	&.divider-white {
+		border-top-width: 4px;
+		border-top-style: solid;
+		margin: 20px 0;
+	  	padding: 20px 0;
+	  
+	  p.call-out {
+		color: $site-dark-grey;
+	  }
+	    
+
+		-webkit-box-shadow: 0 4px 4px -2px rgba(50, 50, 50, 0.75);
+		-moz-box-shadow: 0 4px 4px -2px rgba(50, 50, 50, 0.75);
+		box-shadow: 0 4px 4px -2px rgba(50, 50, 50, 0.75);
+	  
+		&.color-1 {
+			border-top-color: #535353;
+		}
+		
+		&.color-2 {
+			border-top-color: #20af46;
+		}
+		
+		&.color-3 {
+			border-top-color: #9eb1b6;
 		}
 	}
 	
@@ -149,11 +177,6 @@ section, footer {
 		border-bottom: 1px solid $site-blue;
 		margin-bottom: 1rem;
 	}
-	
-	&:nth-last-child(2) {
-		border-bottom: 4px solid $site-blue;
-	}
-	
 }
 
 .custom-list {
@@ -188,27 +211,22 @@ section, footer {
   border-right: 2px solid #ccc;
 }
 
-
-.three-column-colors {
+.column-colors {
+  	margin-bottom: 20px;
 	.columns {
-		width: 31.56%;
-		margin-right: 2.66%;
-		
-		&:last-child {
-			margin-right: 0;
+		&.four {
+			width: 23%;
+			margin-right: 2.66%;
+    	}
+    
+    	&.three {
+			width: 31.56%;
+			margin-right: 2.66%;
 		}
-	}
-}
-
-
-.four-column-colors {
-	.columns {
-		width: 23%;
-		margin-right: 2.66%;
 		border-top-width: 4px;
 		border-top-style: solid;
 		padding-top: 20px;
-		-webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+	  -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.75);
 		-moz-box-shadow:    0px 5px 5px 0px rgba(50, 50, 50, 0.75);
 		box-shadow:         0px 5px 5px 0px rgba(50, 50, 50, 0.75);
 		
@@ -225,18 +243,22 @@ section, footer {
 		}
 		
 		&:nth-child(4) {
-			border-color: $site-red;
+			border-color: $site-dark-grey;
+			margin-right: 0;
+		}
+	  
+		&:last-child {
 			margin-right: 0;
 		}
 	}
 }
-h3.four-color-title {
+h3.color-title {
     font-weight: bold;
     color: #9eb1b6;
     font-size: 20px;
 }
 
-p.four-color-text {
+p.color-text {
     font-size: 14px;
 }
 
@@ -245,6 +267,9 @@ h2 {
 	font-size: 2.05rem;
 }
 
+.dotted-left {
+  border-left: 3px dotted $site-grey;
+}
 
 @import 'home-page';
 @import 'news'; 
