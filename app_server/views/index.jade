@@ -1,112 +1,56 @@
 extends layout
 
 block content
-	section.slideshow
-		.grid
-			.row
-				.columns.small-12
-					//TODO - Create static image sets for small screens
-					.orbit(role='region', aria-label='', data-orbit='', data-timer-delay='2500')
-						ul.orbit-container
-							li.orbit-slide
-								img.orbit-image(src='/images/slideshow/slide-2-poplar-trees-md.jpg', alt='Land Program')
-								figcaption.orbit-caption 
-									span Fresh Coast’s Vacant Land Program partners with cities to install and finance park-like working landscapes that revitalize vacant land 
-							li.orbit-slide
-								img.orbit-image(src='/images/slideshow/test1.jpg', alt='Infrastructure Program')
-								figcaption.orbit-caption 
-									span Fresh Coast’s Vacant Land Program partners with cities to install and finance park-like working landscapes that revitalize vacant land 
-							li.orbit-slide
-								img.orbit-image(src='/images/slideshow/test2.jpg', alt='Infrastructure Program')
-								figcaption.orbit-caption 
-									span Fresh Coast’s Vacant Land Program partners with cities to install and finance park-like working landscapes that revitalize vacant land 
-							li.orbit-slide
-								img.orbit-image(src='/images/slideshow/test3.jpg', alt='Infrastructure Program')
+	section.header
+		img(src="/images/Header.jpg")
+		div.slideOverlay
+			p We are a mission driven project developer comprised of a experienced team of community organizers, engineers, environmental scientists, and finance professionals.
+			p We guide cities to achieve and implement their vision of comprehensive green infrastructure.
 								
-							li.orbit-slide
-								img.orbit-image(src='/images/slideshow/test4.jpg', alt='Infrastructure Program')
-								
-	section.divider-white
-		.row
-			.columns.small-12
-				h2.center What we do
-				p.call-out We are a mission driven project developer comprised of a experienced team of community organizers, engineers, environmental scientists, and finance professionals. We guide cities to achieve and implement their vision of comprehensive green infrastructure.
-	section.divider-white.color-1
-		.row
-			.columns.small-12
-				h2.center What we do
-				p.call-out We are a mission driven project developer comprised of a experienced team of community organizers, engineers, environmental scientists, and finance professionals. We guide cities to achieve and implement their vision of comprehensive green infrastructure.
-	section.divider-white.color-2
-		.row
-			.columns.small-12
-				h2.center What we do
-				p.call-out We are a mission driven project developer comprised of a experienced team of community organizers, engineers, environmental scientists, and finance professionals. We guide cities to achieve and implement their vision of comprehensive green infrastructure.
-	section.divider-white.color-3
-		.row
-			.columns.small-12
-				h2.center What we do
-				p.call-out We are a mission driven project developer comprised of a experienced team of community organizers, engineers, environmental scientists, and finance professionals. We guide cities to achieve and implement their vision of comprehensive green infrastructure.
-	section.column-colors
-		h2.center Our Advantage.
-		br
-		.row
-			.columns.four
-					h3.color-title Triple-Bottom Line Approach
-					p.color-text Commitment to generating financial, social and environmental returns enables trusted relationships with cities and differentiates Fresh Coast from traditional private developers.
-			.columns.four
-					h3.color-title Triple-Bottom Line Approach
-					p.color-text Commitment to generating financial, social and environmental returns enables trusted relationships with cities and differentiates Fresh Coast from traditional private developers.
-			.columns.four
-					h3.color-title Triple-Bottom Line Approach
-					p.color-text Commitment to generating financial, social and environmental returns enables trusted relationships with cities and differentiates Fresh Coast from traditional private developers.
-			.columns.four
-					h3.color-title Triple-Bottom Line Approach
-					p.color-text Commitment to generating financial, social and environmental returns enables trusted relationships with cities and differentiates Fresh Coast from traditional private developers.
-
-	section.column-colors
-		h2.center Our Advantage.
-		br
-		.row
-			.columns.three
-					h3.color-title Triple-Bottom Line Approach
-					p.color-text Commitment to generating financial, social and environmental returns enables trusted relationships with cities and differentiates Fresh Coast from traditional private developers.
-			.columns.three
-					h3.color-title Triple-Bottom Line Approach
-					p.color-text Commitment to generating financial, social and environmental returns enables trusted relationships with cities and differentiates Fresh Coast from traditional private developers.
-			.columns.three
-					h3.color-title Triple-Bottom Line Approach
-					p.color-text Commitment to generating financial, social and environmental returns enables trusted relationships with cities and differentiates Fresh Coast from traditional private developers.
-	
 	section.divider
 		.row
 			.columns.small-12
-				h2.center How we do it
-				p.call-out It has been established nationwide that green infrastructure for stormwater management provides significant cost savings, revitalizes communities, and provides resiliency and stability.
-
-	section.divider.color-1
-		.row
-			.columns.small-12
-				h2.center How we do it
-				p.call-out It has been established nationwide that green infrastructure for stormwater management provides significant cost savings, revitalizes communities, and provides resiliency and stability.
+				h2.center What we do
+				
+	section.column-colors
+		h4.center 
+			strong Our mission is impact
+		br
+		.row(data-equalizer, data-equalize-by-row="true", id="boxes")
+			.columns.three(data-equalizer-watch)
+					h3.color-title Strengthened Community
+					p.color-text Our projects include community-oriented designs and programming, which increases pride and engagement among community members
+			.columns.three(data-equalizer-watch)
+					h3.color-title Shared Prosperity
+					p.color-text Our low-cost financing and commitment to local hiring improves economic outcomes for residents, neighborhoods and municipal governments
+			.columns.three(data-equalizer-watch)
+					h3.color-title Ecological Health
+					p.color-text Our turnkey green stormwater infrastructure projects improve water, soil and air quality while helping communities manage flooding and other impacts
+	
 	section.divider.color-2
 		.row
 			.columns.small-12
 				h2.center How we do it
-				p.call-out It has been established nationwide that green infrastructure for stormwater management provides significant cost savings, revitalizes communities, and provides resiliency and stability.
-	section.divider.color-3
-		.row
-			.columns.small-12
-				h2.center How we do it
-				p.call-out It has been established nationwide that green infrastructure for stormwater management provides significant cost savings, revitalizes communities, and provides resiliency and stability.
-	section.divider-white.color-1
+	
+	section
 		.row
 			.columns.small-6
+				p It has been established nationwide that green infrastructure for stormwater management provides significant cost savings, revitalizes communities, and provides resiliency and stability.
 				p We design, develop, finance, and maintain projects from start-to-finish as a long-term partner. 
-				| We engage your community, from residents and local businesses to nonprofits and city officials, throughout the process of planning and implementation. 
+				p We engage your community, from residents and local businesses to nonprofits and city officials, throughout the process of planning and implementation. 
 			.columns.small-6
 				img(src="/images/delivery.jpg")
 
-	section.divider-white.color-2
+	section.divider.color-3
+		.row
+			.columns.small-12
+				h2.center Benefits
+	section.benefits
+		.row
+			.columns.small-6
+				h5.center Environmental
+			.columns.small-6
+				h5.center Social
 		.row
 			.columns.small-12
 				img(src="/images/benefits.jpg")

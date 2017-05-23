@@ -213,6 +213,7 @@ section, footer {
 
 .column-colors {
   	margin-bottom: 20px;
+	padding-top: 20px !important;
 	.columns {
 		&.four {
 			width: 23%;
@@ -222,6 +223,7 @@ section, footer {
     	&.three {
 			width: 31.56%;
 			margin-right: 2.66%;
+			border-color: $site-green;
 		}
 		border-top-width: 4px;
 		border-top-style: solid;
@@ -230,22 +232,22 @@ section, footer {
 		-moz-box-shadow:    0px 5px 5px 0px rgba(50, 50, 50, 0.75);
 		box-shadow:         0px 5px 5px 0px rgba(50, 50, 50, 0.75);
 		
-		&:nth-child(1) {
-			border-color: $site-green;
-		}
-		
-		&:nth-child(2) {
-			border-color: $site-blue;
-		}
-		
-		&:nth-child(3) {
-			border-color: $site-grey;
-		}
-		
-		&:nth-child(4) {
-			border-color: $site-dark-grey;
-			margin-right: 0;
-		}
+//		&:nth-child(1) {
+//			border-color: $site-green;
+//		}
+//		
+//		&:nth-child(2) {
+//			border-color: $site-blue;
+//		}
+//		
+//		&:nth-child(3) {
+//			border-color: $site-grey;
+//		}
+//		
+//		&:nth-child(4) {
+//			border-color: $site-dark-grey;
+//			margin-right: 0;
+//		}
 	  
 		&:last-child {
 			margin-right: 0;
@@ -269,6 +271,30 @@ h2 {
 
 .dotted-left {
   border-left: 3px dotted $site-grey;
+}
+
+section.header, section.benefits {
+	padding: 0 !important;
+	margin: 0 !important;
+	border-bottom: 4px solid $site-white;
+	position: relative;
+	
+	.slideOverlay {
+		position: absolute;
+		width: 75%;
+		top: 30%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: $site-white;
+		font-weight: bold;
+		font-size: 1.5em;
+	}
+	
+	h5 {
+		color: $site-grey;
+		margin-top: 20px;
+		font-weight: bold;
+	}
 }
 
 @import 'home-page';
