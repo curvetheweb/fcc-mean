@@ -120,7 +120,7 @@ section, footer {
 	&.divider {
 		border-bottom: 4px solid #fff;
 		background-color: $site-blue;
-		padding: 1rem 0 2rem;
+		padding: 1.5rem 0;
 		
 		&.color-1 {
 			background-color: #535353;
@@ -283,7 +283,7 @@ section.header, section.benefits {
 		position: absolute;
 		width: 75%;
 		max-width: 1200px;
-		top: 30%;
+		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		color: $site-white;
@@ -296,6 +296,10 @@ section.header, section.benefits {
 		margin-top: 20px;
 		font-weight: bold;
 	}
+}
+
+.color-green {
+	color: $site-green;
 }
 
 @import 'home-page';
