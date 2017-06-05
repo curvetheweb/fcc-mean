@@ -275,9 +275,10 @@ h2 {
 
 section.header, section.benefits {
 	padding: 0 !important;
-	margin: 0 !important;
+	margin: 0 auto !important;
 	border-bottom: 4px solid $site-white;
 	position: relative;
+	max-width: 1920px;
 	
 	.slideOverlay {
 		position: absolute;
