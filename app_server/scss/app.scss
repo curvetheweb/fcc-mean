@@ -309,6 +309,15 @@ section.header, section.benefits {
 
 .size-up {
 	font-size: 1.25em;
+	line-height: 1.3;
+}
+
+.green-circle-row {
+	min-height: 320px;
+	
+	p {
+		line-height: 1.3;
+	}
 }
 
 @import 'home-page';
