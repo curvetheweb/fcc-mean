@@ -1,17 +1,17 @@
 extends layout
 
 block content
-	section.header
-		img(src="/images/header-cropped.jpg")
+	section.header.mission-header
+		img(src="/images/header-cropped.jpg").mission-text
 		div.slideOverlay
 			p We are a mission driven project developer comprised of a experienced team of community organizers, engineers, environmental scientists, and finance professionals.
 			p We guide cities to achieve and implement their vision of comprehensive green infrastructure.
-								
+
 	section.divider
 		.row
 			.columns.small-12
 				h2.center The impact we seek
-				
+
 	section.column-colors
 		.row(data-equalizer, data-equalize-by-row="true", id="boxes")
 			.columns.three(data-equalizer-watch)
@@ -23,19 +23,19 @@ block content
 			.columns.three(data-equalizer-watch)
 					h3.color-title Ecological Health
 					p.color-text Our turnkey green stormwater infrastructure projects improve water, soil and air quality while helping communities manage flooding and other impacts
-	
+
 	section.divider.color-2
 		.row
 			.columns.small-12
 				h2.center What we do
-	
+
 	section
 		.row
 			.columns.small-12
 				h3.color-green We develop and finance community-focused turnkey green infrastructure
 				p Green infrastructure for stormwater management provides significant cost savings, revitalizes communities, and provides resiliency and stability.
-				p We design, develop, finance, and maintain projects from start-to-finish as a long-term partner. 
-				p We engage your community, from residents and local businesses to nonprofits and city officials, throughout the process of planning and implementation. 
+				p We design, develop, finance, and maintain projects from start-to-finish as a long-term partner.
+				p We engage your community, from residents and local businesses to nonprofits and city officials, throughout the process of planning and implementation.
 		.row(style="margin-top: 20px;")
 			.columns.small-12
 				img(src="/images/communityEngagement.svg")
@@ -53,20 +53,20 @@ block content
 				.row.green-circle-row
 					.columns.small-12.medium-5.green-circle-column
 						img(src="/images/water.svg")
-						p Improves 
+						p Improves
 							strong Water Quality
 					.columns.small-12.medium-5.green-circle-column
 						img(src="/images/carbon.svg")
-						p Sequesters 
+						p Sequesters
 							strong Carbon
 				.row.green-circle-row
 					.columns.small-12.medium-5.green-circle-column
 						img(src="/images/air.svg")
-						p Improves 
+						p Improves
 							strong Air Quality
 					.columns.small-12.medium-5.green-circle-column
 						img(src="/images/biodiversity.svg")
-						p Increases Plant and Wildlife 
+						p Increases Plant and Wildlife
 							strong Biodiversity
 				.row
 					.columns.small-12
@@ -80,27 +80,27 @@ block content
 				.row.green-circle-row
 					.columns.small-12.medium-5.green-circle-column
 						img(src="/images/jobs.svg")
-						p Creates 
+						p Creates
 							strong Long-term Jobs
 					.columns.small-12.medium-5.green-circle-column
 						img(src="/images/health.svg")
-						p Improves 
+						p Improves
 							strong Health Outcomes
 				.row.green-circle-row
 					.columns.small-12.medium-5.green-circle-column
 						img(src="/images/safety.svg")
-						p Improves 
+						p Improves
 							strong Public Safety
 					.columns.small-12.medium-5.green-circle-column
 						img(src="/images/property.svg")
-						p Positively Impacts 
+						p Positively Impacts
 							strong Property Values
 						br
 				.row
 					.columns.small-12
 						p.size-up Installation of green infrastructure has been shown to reduce crime up to 10% and increase property values up to 20%
-					
-				
+
+
 	section.divider.color-3
 		.row
 			.columns.small-12
@@ -108,6 +108,6 @@ block content
 	section
 		.row
 			.columns.small-12
-				p.center(style="font-size: 1.5rem") Visit our affiliated nonprofit, 
+				p.center(style="font-size: 1.5rem") Visit our affiliated nonprofit,
 					a(href='https://freshcoastcommunities.org/', target='_blank') Fresh Coast Communities
 					| , to learn about its mission to get the most good out of green infrastructure.
