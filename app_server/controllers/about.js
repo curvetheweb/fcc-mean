@@ -1,7 +1,7 @@
 /* GET about us page */
-//module.exports.about = function(req, res) {
-//  res.render('about-us', {title: 'About Us'});
-//};
+module.exports.about = function(req, res) {
+ res.render('about-us', {title: 'About Us'});
+};
 
 /* GET team page */
 //module.exports.team = function(req, res) {
