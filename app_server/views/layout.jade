@@ -26,11 +26,17 @@ html.no-js(lang='en')
 								button.menu-icon(type="button", data-toggle='data-toggle')
 								.title-bar-title Menu
 							header.top-bar#main-nav
+								nav.main-nav
 								.top-bar-title
 									a(href="/")
 										img.logo(alt='Fresh Coast Capital Logo', src='/images/FreshCoastCapital-Logo.png')
 								.top-bar-left
 									p.header-subtitle Transforming communities by investing in the power of nature
+									ul.vertical.medium-horizontal.menu
+										li(class=(title === 'Home' ? 'active' : ''))
+											a(href='/') Home
+										li(class=(title === 'Solutions' ? 'active' : ''))
+											a(href='/solutions') Solutions
 
 								.top-bar-right
 									a.button.ghost(data-open='form-modal') Contact Us
