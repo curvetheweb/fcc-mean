@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 var ctrlMain = require('../controllers/main');
-// var ctrlAbout = require('../controllers/about');
+var ctrlAbout = require('../controllers/about');
 var ctrlSolutions = require('../controllers/solutions');
 //var ctrlPress = require('../controllers/press');
 var ctrlForms = require('../controllers/forms');
@@ -12,7 +12,7 @@ var ctrlForms = require('../controllers/forms');
 router.get('/', ctrlMain.index);
 
 /* About Pages */
-// router.get('/about-us', ctrlAbout.about);
+router.get('/about-us', ctrlAbout.about);
 //router.get('/about-us/team', ctrlAbout.team);
 //router.get('/about-us/projects', ctrlAbout.projects);
 

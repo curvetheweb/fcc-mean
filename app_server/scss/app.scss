@@ -19,7 +19,9 @@
 //$md-plus: "screen and (min-width: 40em)";
 //$lg-plus: "screen and (min-width: 64em)";
 
-
+h4 {
+	font-size: 1.5rem;
+}
 .no-js {
 	@include breakpoint(small only) {
 		.top-bar {
@@ -339,8 +341,9 @@ section.header, section.benefits {
 }
 
 @import 'home-page';
-@import 'news';
-@import 'about';
-@import 'projects';
-@import 'jobs';
-@import 'press';
+// @import 'news';
+// @import 'about';
+// @import 'projects';
+// @import 'jobs';
+// @import 'press';
+@import 'solutions';
